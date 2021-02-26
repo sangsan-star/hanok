@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://post.editor.naver.com/editor?docId=27313186 -->
+<html lang="ko" class="fixedsticky-withoutfixedfixed"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	
+		
+		
+			<link href="./dangun_files/proxy_post_desktop_control.css" rel="stylesheet" type="text/css">
+		
+	
+
+	<link rel="icon" href="https://ssl.pstatic.net/static.post/image/icon/n_160311/favicon.ico" type="image/x-icon">
+	<title>SmartEditor - editor</title>
+<style id="minFontCSS" type="text/css">@font-face{font-family:se_NanumGothic;font-weight:400;src:local(나눔고딕),local(nanumgothic),local(나눔고딕OTF),local(nanumgothicotf),url(https://ssl.pstatic.net/static.editor/static/font/NanumGothic_LW_R.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/NanumGothic_LW_R.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/NanumGothic_LW_R.ttf) format("truetype")}
+@font-face{font-family:se_NanumMyeongjo;font-weight:400;src:local(나눔명조),local(nanummyeongjo),local(나눔명조OTF),local(nanummyeongjootf),url(https://ssl.pstatic.net/static.editor/static/font/NanumMyeongjo_LW_R.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/NanumMyeongjo_LW_R.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/NanumMyeongjo_LW_R.ttf) format("truetype")}
+@font-face{font-family: 'Source Code Pro';font-weight:400;font-style: normal;font-stretch: normal;src:url(https://ssl.pstatic.net/static.editor/static/font/SourceCodePro-Regular.ttf.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/SourceCodePro-Regular.otf.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/SourceCodePro-Regular.ttf) format("truetype")}
+@font-face{font-family:se_NanumBarunGothic;font-weight:400;src:local(나눔바른고딕),local(nanumbarungothic),local(나눔바른고딕OTF),local(nanumbarungothicotf),url(https://ssl.pstatic.net/static.editor/static/font/NanumBarunGothic_LW_R.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/NanumBarunGothic_LW_R.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/NanumBarunGothic_LW_R.ttf) format("truetype")}
+</style></head>
+
+<body>
+<!-- <script type="text/javascript" src="/static/js/src/se.js?523f140707c5de2afe72d749b75fab5f45ff7b87"></script> -->
+
+<div class="editor-wrap">
+	<div class="publish_progress_bar" id="se_progressbar"></div>
+	<div class="editor-header" id="se_top_menu_area">
+		<a href="https://post.editor.naver.com/editor?docId=27313186#se_side_bar" title="네비게이션" class="access_hot_key"><span>문서작성 메뉴 바로가기</span></a>
+		<a href="https://post.editor.naver.com/editor?docId=27313186#se_canvas_frame" title="네비게이션" class="access_hot_key"><span>본문 및 미리보기영역 바로가기</span></a>
+		<div class="header-default">
+			<h1>
+                <a href="http://www.naver.com/" target="_blnak" class="logo_naverN" onclick="clickcr(this, &#39;STA.naver&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">네이버 메인</span></a>
+                <a href="http://post.naver.com/" target="_blnak" class="logo_service post" onclick="clickcr(this, &#39;STA.post&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">포스트 서비스</span></a>
+			</h1>
+			<div class="se2_link_wrap" style="display:none">
+				<a class="se2_link" href="https://post.editor.naver.com/editor?docId=27313186#" style="" id="_se_se2" onclick="clickcr(this,&#39;STA.se2&#39;, &#39;&#39;, &#39;&#39;, event); return false;">이전 버전으로 쓰기</a>
+				<a class="se_set_default" style="" id="_se_default_eidtor_setting" href="https://post.editor.naver.com/editor?docId=27313186#" onclick="clickcr(this, &#39;STA.editorset&#39;, &#39;&#39;, &#39;&#39;, event); return false;"><span class="blind">기본에디터설정</span></a>
+			</div>
+			<div class="device_group" id="se_preview_ctrl">
+				<a href="https://post.editor.naver.com/editor?docId=27313186#" title="" class="device_mobile __preview_type" data-previewtype="mobile" onclick="clickcr(this, &#39;tpb.mview&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">미리보기 영역 모바일 너비로 바꾸기</span></a>
+				<a href="https://post.editor.naver.com/editor?docId=27313186#" title="" class="device_tablet __preview_type" data-previewtype="tablet" onclick="clickcr(this, &#39;tpb.tview&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">미리보기 영역 태블릿 너비로 바꾸기</span></a>
+				<a href="https://post.editor.naver.com/editor?docId=27313186#" title="" class="device_desktop __preview_type is-active" data-previewtype="desktop" onclick="clickcr(this, &#39;tpb.pview&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">미리보기 영역 PC 너비로 바꾸기</span></a>
+			</div>
+			<div class="header-nav">
+				<ul class="nav_group">
+					<!-- <li class="lbl_autoSaving" style="display:none">
+						<span>저장중...</span>
+					</li> -->
+					<!-- [D] 활성화 is-active -->
+					<!--li class="lst_btn_setting">
+						<a href="#" id="se_top_template_btn" class="btn_load" onclick="clickcr(this, 'tpb.template', '', '', event);"><span>템플릿</span></a>
+						<div id="se_top_templatelist_layer">
+						</div>
+					</li-->
+					<li class="lst_btn_setting">
+					<div class="btn_temp_wrap" style="display:none">
+						<a href="https://post.editor.naver.com/editor?docId=27313186#" class="btn_temp_save" id="se_top_savedoc_temp_save_btn" onclick="clickcr(this, &#39;tpb.save&#39;, &#39;&#39;, &#39;&#39;, event);"><span>저장</span></a>
+						<a href="https://post.editor.naver.com/editor?docId=27313186#" class="btn_temp_state" id="se_top_savedoc_temp_count_btn" onclick="clickcr(this, &#39;tpb.spost&#39;, &#39;&#39;, &#39;&#39;, event);"><span id="se_top_savedoc_temp_count_view">53</span></a>
+					</div>
+					<div id="se_top_savelist_layer"></div>
+					</li>
+
+					<li class="lst_btn_setting">
+						<a href="https://post.editor.naver.com/editor?docId=27313186#" id="se_top_publish_btn" class="btn_type_active" onclick="clickcr(this, &#39;tpb.publish&#39;, &#39;&#39;, &#39;&#39;, event);"><span>발행</span></a>
+						<div id="se_top_publish_layer"></div>
+					</li>
+					<li class="lst_btn_setting">
+						<a href="https://post.editor.naver.com/editor?docId=27313186#" onclick="return false;" title="도움말" id="se_guide_btn" class="btn_tip"><span class="blind">퀵 가이드 띄우기</span></a>
+					</li>
+					<li class="lst_btn_setting">
+						<a title="" href="https://post.editor.naver.com/editor?docId=27313186#" id="se_top_setting_btn" class="btn_gnb_more" onclick="clickcr(this, &#39;tpb.more&#39;, &#39;&#39;, &#39;&#39;, event); return false;"><span class="blind">더보기</span></a>
+						<div class="pop_simple pop_gnb_more" id="se_top_setting_contents">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<h2>
+				<!-- [D] 자동저장 텍스트 저장중.../저장됨 -->
+				<span class="lbl_autoSaving" style="display:none">저장중...</span>
+			</h2>
+		</div>
+		<div id="se_doctoolbar" class="header-docProperty">
+			<div class="wrap_btn_canvas">
+				<a role="button" href="https://post.editor.naver.com/editor?docId=27313186#" class="btn_editorTypeChanger __se_doc_type_selector">
+					기본형
+				</a>
+				<div class="pop_simple pop_editor_type __se_doc_type_list">
+					<ul>
+						<li class="lst">
+							<a href="https://post.editor.naver.com/editor?docId=27313186#" class="menu0 __se_doctype_btn" title="에디터 타입 변경하기" data-doctype="normal"><span>기본형</span></a>
+						</li>
+						<li class="lst">
+							<a href="https://post.editor.naver.com/editor?docId=27313186#" class="menu1 __se_doctype_btn" title="에디터 타입 변경하기" data-doctype="card" onclick="clickcr(this, &#39;dct.card&#39;, &#39;&#39;, &#39;&#39;, event);"><span>카드형</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap_btn_wholeSetting __document_toolbar"><a role="button" href="https://post.editor.naver.com/editor?docId=27313186#" onclick="clickcr(this, &#39;dct.font&#39;, &#39;&#39;, &#39;&#39;, event);" class="btn_wholeFF __se_font_select">전체글꼴선택</a>
+<div class="pop_simple pop_wholeFF __se_font_list">
+    <ul>
+        <li class="lst">
+            <a href="https://post.editor.naver.com/editor?docId=27313186#" class="__se_font_list_item menu0" onclick="clickcr(this, &#39;dct.font1&#39;, &#39;&#39;, &#39;&#39;, event);" data-font="sans-serif" data-fontname="기본서체" title="전체 문서에 서체 적용하기"><span>기본서체</span></a>
+        </li>
+        <li class="lst">
+            <a href="https://post.editor.naver.com/editor?docId=27313186#" class="__se_font_list_item menu1" onclick="clickcr(this, &#39;dct.font2&#39;, &#39;&#39;, &#39;&#39;, event);" data-font="nanummyeongjo" data-fontname="나눔명조" title="전체 문서에 서체 적용하기"><span>나눔명조</span></a>
+        </li>
+        <li class="lst">
+            <a href="https://post.editor.naver.com/editor?docId=27313186#" class="__se_font_list_item menu2" onclick="clickcr(this, &#39;dct.font3&#39;, &#39;&#39;, &#39;&#39;, event);" data-font="nanumgothic" data-fontname="나눔고딕" title="전체 문서에 서체 적용하기"><span>나눔고딕</span></a>
+        </li>
+        <li class="lst">
+            <a href="https://post.editor.naver.com/editor?docId=27313186#" class="__se_font_list_item menu3" onclick="clickcr(this, &#39;dct.font4&#39;, &#39;&#39;, &#39;&#39;, event);" data-font="nanumbarungothic" data-fontname="바른고딕" title="전체 문서에 서체 적용하기"><span>바른고딕</span></a>
+        </li>
+        <!--li class="lst">
+            <a href="#" class="__se_font_list_item menu4 se_fontFamily se_ff_nanumsquare" onclick="clickcr(this, 'dct.font5', '', '', event);" data-font="nanumsquare" data-fontname="나눔스퀘어" title="전체 문서에 서체 적용하기"><span>나눔스퀘어</span></a>
+        </li-->
+    </ul>
+</div>
+				<div class="se_wholeAlign __se_doc_align">
+					<a href="https://post.editor.naver.com/editor?docId=27313186#" role="button" class="btn_alignLeft __se_align_btn" onclick="clickcr(this, &#39;dct.left&#39;, &#39;&#39;, &#39;&#39;, event);" data-align="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a>
+					<a href="https://post.editor.naver.com/editor?docId=27313186#" role="button" class="btn_alignCenter __se_align_btn" onclick="clickcr(this, &#39;dct.center&#39;, &#39;&#39;, &#39;&#39;, event);" data-align="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a>
+					<a href="https://post.editor.naver.com/editor?docId=27313186#" role="button" class="btn_alignRight __se_align_btn" onclick="clickcr(this, &#39;dct.right&#39;, &#39;&#39;, &#39;&#39;, event);" data-align="right" title="오른쪽 정렬"><span class="blind">오른쪽 정렬</span></a>
+					<a href="https://post.editor.naver.com/editor?docId=27313186#" role="button" class="btn_alignJustify __se_align_btn" onclick="clickcr(this, &#39;dct.justify&#39;, &#39;&#39;, &#39;&#39;, event);" data-align="justify" title="양끝 정렬"><span class="blind">양끝 정렬</span></a>
+				</div>
+				<a role="button" href="https://post.editor.naver.com/editor?docId=27313186#" class="btn_speller" id="se_top_speller_btn" onclick="clickcr(this, &#39;dct.spellcheck&#39;, &#39;&#39;, &#39;&#39;, event);"><span>맞춤법 검사</span></a>
+			</div>
+
+			<div class="wrap_btn_load">
+				<a href="https://post.editor.naver.com/editor?docId=27313186#" id="se_top_template_btn" class="btn_load" onclick="clickcr(this, &#39;tpb.template&#39;, &#39;&#39;, &#39;&#39;, event);"><span>템플릿</span></a>
+				<div id="se_top_templatelist_layer">
+				</div>
+			</div>
+		</div>
+
+		<!-- 맞춤법검사 상단영역 -->
+		<div class="speller_header" id="se_top_speller">
+			<div class="speller_title" id="se_speller_msg">
+				맞춤법에 어긋난 단어가 <span class="speller_cnt">15개</span> 있습니다.
+			</div>
+			<ul class="speller_nav_group">
+				<li class="lst_btn_setting">
+					<a role="button" href="https://post.editor.naver.com/editor?docId=27313186#" class="btn_speller_re" id="se_speller_retry_btn" onclick="clickcr(this, &#39;spc.recheck&#39;, &#39;&#39;, &#39;&#39;, event);"><span>맞춤법 재검사</span></a>
+				</li>
+				<li class="lst_btn_setting">
+					<a role="button" href="https://post.editor.naver.com/editor?docId=27313186#" class="btn_speller_end" id="se_speller_stop_btn" onclick="clickcr(this, &#39;spc.end&#39;, &#39;&#39;, &#39;&#39;, event);"><span>검사 종료</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="editor-noticeWrap" id="se_top_contents_box">
+	</div>
+
+	<div class="editor-container" style="z-index:80;">
+		<div class="editor-side side-left" id="se_side_bar">
+            <!--[D]
+            documentTitle 컴포넌트가 is-noimg인경우 leftPane-toggle 에 type2 클래스를 추가해주세요.
+            열기 / 닫기 텍스트는 토글될 때 함께 변경해주세요.
+            -->
+            <a href="https://post.editor.naver.com/editor?docId=27313186#" class="leftPane-toggle" id="se_side_toggle_btn"><span class="blind">문서작성 메뉴 열기 / 닫기</span></a>
+			<div class="editor-side-innerWrap">
+				<div class="se_tabContent se_componentTab is-active" id="se_side_comp_panel">
+                    <a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_tabTitle __se_side_panel_toggle_btn"><div><h2>글쓰기 도구</h2></div></a>
+					<div class="__se_side_panel_cont se_tabContentsWraper" style="max-height: 261px; overflow: visible;">
+					<ul class="se_tabGroup se_component_group" id="se_side_comp_list"><li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_p __se_comp_btn" data-itemtype="paragraph" title="텍스트">
+    
+    <span class="label_text">텍스트</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_image __se_comp_btn" data-itemtype="image" title="사진">
+    
+    <span class="label_text">사진</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_cloudSns __se_comp_btn" data-itemtype="cloudSNS" title="클라우드/SNS 사진">
+    
+    <span class="label_text">SNS 사진</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_sticker __se_comp_btn" data-itemtype="sticker" title="스티커">
+    
+    <span class="label_text">스티커</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_video __se_comp_btn" data-itemtype="video" title="동영상">
+    
+    <span class="label_text">동영상</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_map __se_comp_btn" data-itemtype="map" title="장소">
+    
+    <span class="label_text">장소</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_horizontalLine __se_comp_btn" data-itemtype="horizontalLine" title="구분선">
+    
+    <span class="label_text">구분선</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_blockquote __se_comp_btn" data-itemtype="quotation" title="인용구">
+    
+    <span class="label_text">인용구</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_subjectMatter __se_comp_btn" data-itemtype="material" title="글감 검색">
+    
+    <span class="label_text">글감 검색</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_link __se_comp_btn" data-itemtype="oglink" title="링크">
+    
+    <span class="label_text">링크</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_audio __se_comp_btn" data-itemtype="audio" title="오디오">
+    
+    <span class="label_text">오디오</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_schedule __se_comp_btn" data-itemtype="schedule" title="일정">
+    
+    <span class="label_text">일정</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_code __se_comp_btn" data-itemtype="code" title="소스코드">
+    
+    <span class="label_text">소스코드</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_table __se_comp_btn" data-itemtype="table" title="표">
+    
+    <span class="label_text">표</span>
+</button></li>
+<li class="se_componentList ui-draggable ui-draggable-handle"><button type="button" class="se_component_searchImage __se_comp_btn" data-itemtype="searchImage" title="사진검색">
+    <i class="ico_new"></i>
+    <span class="label_text">사진검색</span>
+</button></li>
+</ul>
+					</div>
+				</div>
+				<div class="se_tabContent se_themeTab is-active" id="se_side_theme_panel">
+					<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_tabTitle __se_side_panel_toggle_btn"><div><h2>스타일</h2></div></a>
+					<div class="__se_side_panel_cont se_tabContentsWraper" style="max-height: 201px;">
+						<div class="se_documentProperties_Group">
+							<div class="__se_side_theme_list se_tabGroup se_theme_group"><div class="se_themeList">
+	<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_theme __se_theme_item" data-themetype="default" onclick="clickcr(this, &#39;sdb*t.theme1&#39;, &#39;&#39;, &#39;&#39;, event); return false;">
+		<div class="se_theme_thumb" style="background:url(https://ssl.pstatic.net/static.editor/static/dist/editor/1608280975560/img/theme/btn_lnb_theme1.png) no-repeat;"></div>
+		<span class="tit_theme">화이트</span>
+	</a>
+</div>
+<div class="se_themeList">
+	<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_theme __se_theme_item" data-themetype="gray" onclick="clickcr(this, &#39;sdb*t.theme2&#39;, &#39;&#39;, &#39;&#39;, event); return false;">
+		<div class="se_theme_thumb" style="background:url(https://ssl.pstatic.net/static.editor/static/dist/editor/1608280975560/img/theme/btn_lnb_theme2.png) no-repeat;"></div>
+		<span class="tit_theme">그레이</span>
+	</a>
+</div>
+<div class="se_themeList">
+	<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_theme __se_theme_item" data-themetype="black" onclick="clickcr(this, &#39;sdb*t.theme3&#39;, &#39;&#39;, &#39;&#39;, event); return false;">
+		<div class="se_theme_thumb" style="background:url(https://ssl.pstatic.net/static.editor/static/dist/editor/1608280975560/img/theme/btn_lnb_theme3.png) no-repeat;"></div>
+		<span class="tit_theme">블랙</span>
+	</a>
+</div>
+<div class="se_themeList">
+	<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_theme __se_theme_item" data-themetype="modernblue" onclick="clickcr(this, &#39;sdb*t.theme4&#39;, &#39;&#39;, &#39;&#39;, event); return false;">
+		<div class="se_theme_thumb" style="background:url(https://ssl.pstatic.net/static.editor/static/dist/editor/1608280975560/img/theme/btn_lnb_theme4.png) no-repeat;"></div>
+		<span class="tit_theme">모던블루</span>
+	</a>
+</div>
+<div class="se_themeList">
+	<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_theme __se_theme_item" data-themetype="pinkemotion" onclick="clickcr(this, &#39;sdb*t.theme5&#39;, &#39;&#39;, &#39;&#39;, event); return false;">
+		<div class="se_theme_thumb" style="background:url(https://ssl.pstatic.net/static.editor/static/dist/editor/1608280975560/img/theme/btn_lnb_theme5.png) no-repeat;"></div>
+		<span class="tit_theme">핑크감성</span>
+	</a>
+</div>
+<div class="se_themeList">
+	<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_theme __se_theme_item is-active" data-themetype="bluebubble" onclick="clickcr(this, &#39;sdb*t.theme6&#39;, &#39;&#39;, &#39;&#39;, event); return false;">
+		<div class="se_theme_thumb" style="background:url(https://ssl.pstatic.net/static.editor/static/dist/editor/1608280975560/img/theme/btn_lnb_theme6.png) no-repeat;"></div>
+		<span class="tit_theme">블루버블<span class="blind">선택됨</span></span>
+	</a>
+</div>
+</div>
+							<div id="se_theme_paging" class="se_theme_pager" style="display: none;"><div class="se_pager_wrap">
+	<button type="button" class="se_pager_prev __prev_btn is-disabled"><span class="blind">이전 5개의 테마 리스트 보기</span></button>
+	<button type="button" class="se_pager_next __next_btn is-disabled"><span class="blind">다음 5개의 테마 리스트 보기</span></button>
+	<span class="blind">테마 페이징</span>
+	<ul class="se_pager_list">
+		<li><button type="button" class="se_pager __page_num __page_1 is-active" data-page="1"><span>1</span></button></li>		
+	</ul>
+</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="se_tabContent se_libraryTab is-active" id="se_side_lib_panel">
+					<a href="https://post.editor.naver.com/editor?docId=27313186#" class="se_tabTitle __se_side_panel_toggle_btn"><div><h2>라이브러리</h2></div></a>
+					<div class="__se_side_panel_cont se_tabContentsWraper" style="display: block; max-height: 88px;">
+					<ul class="se_tabGroup se_lib_group" id="se_side_lib_list">
+					<li class="se_libraryList __se_lib_drag __se_img_lib is-filled ui-draggable ui-draggable-handle is-active">
+	<div class="se_library se_library_photo __se_lib_item" data-libid="https://post-phinf.pstatic.net/MjAyMDAxMDlfMjQx/MDAxNTc4NTY1NTI5MDgz.yq4mbD0z3IqSkyssnnhbOecucLeUgWSkBTx3YhLuRScg.WlAWusffrQGb_YuKaVLTaCcpOsrfvdKlSEDw5NAdP48g.JPEG/800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200" id="se3_161426038595787518" style="background-image:url(https://post-phinf.pstatic.net/MjAyMDAxMDlfMjQx/MDAxNTc4NTY1NTI5MDgz.yq4mbD0z3IqSkyssnnhbOecucLeUgWSkBTx3YhLuRScg.WlAWusffrQGb_YuKaVLTaCcpOsrfvdKlSEDw5NAdP48g.JPEG/800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200)">
+		<span class="blind">이미지 라이브러리</span>
+	</div>
+	<button type="button" class="btn_del_lib"><span class="blind">삭제</span></button>
+	<div class="se_delete_dim" style="display:none"><span class="blind">현재 글에서 사용되지 않는 라이브러리입니다.</span></div>
+</li>
+<li class="se_libraryList __se_lib_drag __se_img_lib is-filled ui-draggable ui-draggable-handle">
+	<div class="se_library se_library_photo __se_lib_item" data-libid="https://post-phinf.pstatic.net/MjAyMDAxMDlfODUg/MDAxNTc4NTY1NzM5NzE5.IJjRyOcvFB68OyJXIcnTQw5k54dSMsJUGd1rIdX7YAkg.58Idth3abhzAVbcqxQNKCbcA8mhxH5yP5bqtdmmiKp0g.JPEG/Dangun.jpg?type=w1200" id="se3_161426038595732614" style="background-image:url(https://post-phinf.pstatic.net/MjAyMDAxMDlfODUg/MDAxNTc4NTY1NzM5NzE5.IJjRyOcvFB68OyJXIcnTQw5k54dSMsJUGd1rIdX7YAkg.58Idth3abhzAVbcqxQNKCbcA8mhxH5yP5bqtdmmiKp0g.JPEG/Dangun.jpg?type=w1200)">
+		<span class="blind">이미지 라이브러리</span>
+	</div>
+	<button type="button" class="btn_del_lib"><span class="blind">삭제</span></button>
+	<div class="se_delete_dim" style="display:none"><span class="blind">현재 글에서 사용되지 않는 라이브러리입니다.</span></div>
+</li>
+<li class="se_libraryList __se_lib_drag __se_img_lib is-filled ui-draggable ui-draggable-handle">
+	<div class="se_library se_library_photo __se_lib_item" data-libid="https://post-phinf.pstatic.net/MjAyMDAxMDlfMTMg/MDAxNTc4NTY1NzMwNDcw.-tSu_tLNDMlGPn1s5UD_fdSChLBVTidnJiqllqJ35n0g.5-77-pdap1InU59DqbAcMKilkFbnyN_V45Rrt3SN9U4g.JPEG/800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200" id="se3_161426038595759364" style="background-image:url(https://post-phinf.pstatic.net/MjAyMDAxMDlfMTMg/MDAxNTc4NTY1NzMwNDcw.-tSu_tLNDMlGPn1s5UD_fdSChLBVTidnJiqllqJ35n0g.5-77-pdap1InU59DqbAcMKilkFbnyN_V45Rrt3SN9U4g.JPEG/800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200)">
+		<span class="blind">이미지 라이브러리</span>
+	</div>
+	<button type="button" class="btn_del_lib"><span class="blind">삭제</span></button>
+	<div class="se_delete_dim" style="display:none"><span class="blind">현재 글에서 사용되지 않는 라이브러리입니다.</span></div>
+</li>
+</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="editor-content">
+			<div id="se_frame_layer" style="text-align: center; height: 843px;">
+				<!-- <div class="drawer drawer_userGuide" id="se_bottom_contents_box">
+					<a href="#" class="btn_close_pop __se_box_close" title="팝업 닫기"></a>
+					<div class="drawer_cont __se_box_contents">
+
+					</div>
+				</div> -->
+			<iframe id="se_canvas_frame" src="./dangun_files/canvas.html" title="작성한 글 미리보기 프레임" class="se_inputarea" width="100%" height="100%" frameborder="0" style="max-width: 100%;"></iframe><div id="se_speller_suggest_layer" class="pop_layer_wrap pop_absolute pop_speller_wrap" style="display:none">
+	<div class="in_layer">
+
+		
+		<div class="__se_pop_content pop_content">
+			<i class="pop_speller_pointer" id="se_speller_suggest_arrow"></i>
+
+			
+			<strong class="blind">맞춤법 검사기</strong>
+			<div class="pop_speller">
+				<div class="speller_section_wrap">
+					<div class="speller_section section_word">
+						<input type="text" class="speller_target" value="" placeholder="수정할 문구를 입력하세요.">
+						<div class="speller_recommend" id="se_speller_suggest_list">
+							<!-- speller-suggest-list.hbs
+							<div class="speller_txt_recommend">추천</div>
+							<ul class="wrap_lst_recommend">
+								<li class="item_recommend"><a href="#" onclick="return false">추천단어</a></li>
+							</ul>
+							 -->
+						</div>
+					</div>
+					<div class="speller_section section_detail" id="se_speller_suggest_desc">
+						<div class="txt_spellerLoading">
+							<strong>내용을 불러오는 중입니다.</strong>
+							<img src="./dangun_files/loading_square.gif" alt="">
+						</div>
+						<div class="speller_desc"></div>
+					</div>
+				</div>
+				<div class="speller_bottom" id="se_speller_suggest_toolbar">
+					<div class="wrap_btn_modify">
+						<button class="btn_speller_modify" value="modify" onclick="clickcr(this, &#39;spc.edit&#39;, &#39;&#39;, &#39;&#39;, event);">수정</button><button class="btn_speller_modify_all" value="modifyAll" onclick="clickcr(this, &#39;spc.editall&#39;, &#39;&#39;, &#39;&#39;, event);">모두 수정</button>
+					</div>
+					<div class="wrap_btn_nav">
+						<span class="speller_cnt" id="se_speller_suggest_pagenum">
+							<!-- speller-suggest-page.hbs
+							<span class="cnt_current">1</span>/<span class="cnt_total">15</span>
+							 -->
+						</span>
+						<span id="se_speller_suggest_pagenav">
+						
+						<button class="btn_speller_before" value="prev" onclick="clickcr(this, &#39;spc.prev&#39;, &#39;&#39;, &#39;&#39;, event);">
+							<span class="txt_before">이전</span>
+						</button><button class="btn_speller_after" value="next" onclick="clickcr(this, &#39;spc.next&#39;, &#39;&#39;, &#39;&#39;, event);">
+							<span class="txt_after">다음</span>
+						</button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--[D] 확인, 취소 버튼이 필요하면 들어갈 영역 : 개발에서 필요한 구조 추가
+		<a href="#" class="btn_close_pop" title="팝업 닫기"></a>
+		<div class="__se_pop_buttons pop_btn">
+
+		</div>
+		-->
+
+	</div>
+</div></div>
+
+			<div class="pop_layer_wrap pop_loading" id="se_inner_lodding">
+			<div class="dim"></div>
+			<div class="pop_gnbDefault">
+				<div class="pop_info_text">
+					<span class="__se_loading_text"></span>
+				</div>
+				<div class="se_progress_bar is-progress"></div>
+			</div>
+		</div>
+			<!-- <button type="button" id="se_guide_btn" class="btn_open_userGuide is-on">가이드</button>
+			 -->
+
+		</div>
+		<div class="pop_layer_wrap pop_loading" id="se_outter_lodding">
+			<div class="dim"></div>
+			<div class="pop_gnbDefault">
+				<div class="pop_info_text">
+					<span class="__se_loading_text">글을 불러오고 있습니다...</span>
+				</div>
+				<div class="se_progress_bar is-progress"></div>
+			</div>
+		</div>
+		<!-- [D] 배경이미지 위치 이동 시 다른 영역 가려주는 blocker div -->
+		<!-- [D] body 의 is-movingBg 클래스를 상속 받아서 css로 display 속성 제어 함 -->
+		<div class="se_movingBg_dim"></div>
+		<!-- 사진검색 레이어-->
+		<div class="drawer_searchImage __se_searchImageLayer"></div>
+		<!-- 사진검색 우측 하단 버튼 -->
+		<button type="button" class="btn_open_searchImage __se_open_searchImageLayer_subBtn"><span class="txt">사진검색</span></button>
+	</div>
+	<!--[D] 중앙정렬 레이어팝업 공통 레이아웃 -->
+	<div class="pop_layer_wrap pop_spellerLoading_wrap">
+		<div class="align_wrap">
+			<div class="align_inner_wrap">
+				<div class="dim"></div>
+				<div class="in_layer">
+					<!--[D] 컨텐츠가 들어갈 영역 : 개발에서 필요한 구조 추가 -->
+					<div class="__se_pop_content pop_content">
+						<!--[D] 팝업 레이어 타이틀-->
+						<div class="pop_spellerLoading">
+							<strong>맞춤법 검사 중입니다</strong>
+							<img alt="" src="./dangun_files/loading_square.gif">
+						</div>
+					</div>
+					<!--[D] 확인, 취소 버튼이 필요하면 들어갈 영역 : 개발에서 필요한 구조 추가 -->
+					<div class="__se_pop_buttons pop_btn">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+    
+    
+        <script type="text/javascript" src="./dangun_files/se_editor_init.min.js.다운로드"></script>
+        <script type="text/javascript" src="./dangun_files/post_desktop_normal_res.min.js.다운로드"></script>
+    
+
+
+
+
+<script type="text/javascript">
+(function(){
+        var htInitConfig = {};
+        htInitConfig.ENV_SETTING = {};
+        htInitConfig.ENV_SETTING.DOC_TYPE = "normal";
+        htInitConfig.ENV_SETTING.DEVICE_TYPE = "desktop";
+        htInitConfig.ENV_SETTING.EDITOR_TYPE = "";
+        htInitConfig.ENV_SETTING.IS_FACEBOOK_LINKED = false;
+        htInitConfig.ENV_SETTING.IS_TWITTER_LINKED = true;
+        htInitConfig.ENV_SETTING.IS_AGREE_MAP_INFO = "true";
+        htInitConfig.ENV_SETTING.AUTO_SAVE_USE = ("true" === "true") ? true : false;
+        
+        
+        
+        
+            htInitConfig.ENV_SETTING.I18N_LOCALE = "ko-KR"
+        
+        
+        htInitConfig.ENV_SETTING.EDITOR_DOMAIN = "https://editor.naver.com";
+        
+        htInitConfig.ENV_SETTING.PHOTO_UPLOADER_DOMAIN  = "ecommerce.upphoto.naver.com";
+        htInitConfig.ENV_SETTING.IMAGE_DOMAIN = "https://post-phinf.pstatic.net";
+        htInitConfig.ENV_SETTING.THUMBNAIL_DOMAIN = "http://post.phinf.naver.net";
+        htInitConfig.ENV_SETTING.THUMBNAIL_TYPE = "w1200";
+        htInitConfig.ENV_SETTING.GIF_THUMBNAIL_TYPE = "w500_q75";
+        htInitConfig.ENV_SETTING.VR_THUMBNAIL_TYPE = "preview1200_675";
+        htInitConfig.ENV_SETTING.NDRIVE_DOMAIN = "http://ndrive.naver.com";
+        htInitConfig.ENV_SETTING.SE2_PAGE = "http://editor.post.naver.com/authoringcontent/make.nhn?smartEditorVersion=2";
+        htInitConfig.ENV_SETTING.EVENT_TEMPLATE_USE = false;
+        htInitConfig.ENV_SETTING.OPEN_TEMPLATE_TYPE = "";
+
+        htInitConfig.ENV_SETTING.VIDEO_UPLOADER_TOKEN_URL = "";
+
+        htInitConfig.ENV_SETTING.NAVER_ID = "eoklsh";
+        htInitConfig.ENV_SETTING.IE_COMPATIBLE_MODE = false;
+
+        htInitConfig.ENV_SETTING.SERVICE_HOME = "http://post.naver.com";
+        htInitConfig.ENV_SETTING.SERVICE_NAME = "post";
+        htInitConfig.ENV_SETTING.LOAD_MODE = ("real" === "local") ? "dev" : "dist";
+        htInitConfig.ENV_SETTING.BUILD_PROPERTY = "real";
+        htInitConfig.ENV_SETTING.PUBLISH_RETURN_URL;
+        htInitConfig.ENV_SETTING.TOTAL_TEMPDOC_COUNT = "53";
+        htInitConfig.ENV_SETTING.TOTAL_USER_TEMPLATE_COUNT = ("0" !== "") ? Number("0") : 0;
+        htInitConfig.ENV_SETTING.EMPTY_DOCUENT = false;
+        //http://bts1.navercorp.com/nhnbts/browse/SMRTEDITOR-10865 //맞춤법서버 전환작업 -> 주키퍼설정값을 webConfigJson에 바인딩
+        htInitConfig.ENV_SETTING.WEB_CONFIG = JSON.parse('{"newSpeller" : true,"webglFilterEnable" : true}');    // ' ' 홀따옴표에 주의하세요.
+
+        htInitConfig.USER_INFO = {
+            userLink : "",
+            id : "eoklsh",
+            nickName : "",
+            thumbNail : ""
+        };
+
+        
+        htInitConfig.USER_INFO.defaultMeta = {"isSuccess":true,"errorCode":"","errorMsg":"","templateType":"ugc_simple","status":10,"volumeNo":-1,"seriesNo":0,"openType":0,"searchNotAllowed":0,"volumeAuthorComment":"","reserveDate":"","blogCategoryNo":null,"blogPublish":0,"facebookPublish":0,"twitterPublish":0,"cloudTags":[],"defaultEditorVersion":1};
+        
+        
+        
+        htInitConfig.USER_INFO.seriesCategoryList = [{"31":"건강\u002F의학"},{"32":"게임"},{"33":"육아"},{"34":"경제\u002F비즈니스"},{"63":"과학"},{"36":"국내여행"},{"37":"뉴스\u002F이슈"},{"38":"강좌\u002FTIP"},{"39":"레시피\u002F푸드"},{"40":"인테리어"},{"41":"에세이\u002F웹툰"},{"42":"맛집"},{"43":"미술\u002F전시"},{"44":"반려동물"},{"45":"방송\u002F연예"},{"46":"뷰티"},{"48":"세계여행"},{"50":"스포츠"},{"51":"어학\u002F외국어"},{"52":"연애\u002F결혼"},{"53":"영화\u002F애니"},{"55":"음악\u002F공연"},{"57":"자동차"},{"58":"책\u002F문학"},{"59":"취미\u002FDIY"},{"60":"패션"},{"61":"IT\u002F테크"},{"62":"기타"}];
+        
+        
+        
+
+        
+
+        
+
+        
+
+        
+        htInitConfig.USER_INFO.DOCUMENT_ID = "27313186";
+        
+
+        
+        htInitConfig.USER_INFO.TALKTALK_PROFILES = [];
+        
+
+        htInitConfig.SERVICE_CONFIG = {};
+        
+        
+
+        
+
+        htInitConfig.SERVICE_CONFIG.NOTICE_MESSAGE = "";
+
+        
+
+
+        htInitConfig.USER_PATTERN = {
+            COLLECTOR_ON : false,
+            SAMPLING_PERCENTAGE : 0
+        };
+
+        
+            
+                
+                
+                    htInitConfig.USER_PATTERN.COLLECTOR_ON = false;
+                    htInitConfig.USER_PATTERN.SAMPLING_PERCENTAGE = 0;
+                
+            
+        
+
+        
+        $SE_CONFIG.setProperty("DOC_DATA",{"documentId":"27313186","document":{"title":"5. 철학적인 그리스, 예술적인 조선\n(구들로 이해하는 그리스와 조선의 문화)","author":"","publishDate":"2021-02-25T13:39:41.663+0000","theme":"bluebubble","representativeImage":{"@ctype":"representativeImage","type":"image","thumbnail":{"@ctype":"simpleThumbnail","src":"https:\u002F\u002Fpost-phinf.pstatic.net\u002FMjAyMDAxMDlfMjQx\u002FMDAxNTc4NTY1NTI5MDgz.yq4mbD0z3IqSkyssnnhbOecucLeUgWSkBTx3YhLuRScg.WlAWusffrQGb_YuKaVLTaCcpOsrfvdKlSEDw5NAdP48g.JPEG\u002F800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200"}},"documentStyle":{"@ctype":"documentStyle"},"docType":"normal","components":[{"@ctype":"documentTitle","componentStyle":{"@ctype":"componentStyle","align":"left","fontFamily":"nanumgothic","fontSize":"D2","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","background":{"@ctype":"background","image":{"@ctype":"image","componentStyle":{"@ctype":"componentStyle","align":"justify","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","src":"https:\u002F\u002Fpost-phinf.pstatic.net\u002FMjAyMDAxMDlfMjQx\u002FMDAxNTc4NTY1NTI5MDgz.yq4mbD0z3IqSkyssnnhbOecucLeUgWSkBTx3YhLuRScg.WlAWusffrQGb_YuKaVLTaCcpOsrfvdKlSEDw5NAdP48g.JPEG\u002F800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200","path":"\u002FMjAyMDAxMDlfMjQx\u002FMDAxNTc4NTY1NTI5MDgz.yq4mbD0z3IqSkyssnnhbOecucLeUgWSkBTx3YhLuRScg.WlAWusffrQGb_YuKaVLTaCcpOsrfvdKlSEDw5NAdP48g.JPEG\u002F800px-Socrates_Pio-Clementino_Inv314.jpg","domain":"https:\u002F\u002Fpost-phinf.pstatic.net","width":800,"height":1071,"originalWidth":800,"originalHeight":1071,"offsetCenterXRatio":0.0,"offsetCenterYRatio":-0.11529846343684462,"backgroundPositionX":"50%","backgroundPositionY":"36.9%","alt":"800px-Socrates_Pio-Clementino_Inv314.jpg","caption":"","captionLink":"","fileSize":182081,"animationGIF":false,"fileName":"800px-Socrates_Pio-Clementino_Inv314.jpg","generationFormat":"normal","displayFormat":"normal","uploadedLocal":true,"represent":true},"color":""},"title":"5. 철학적인 그리스, 예술적인 조선\n(구들로 이해하는 그리스와 조선의 문화)","subtitle":"","publishDate":"1970-01-01T00:00:00.000+0000"},{"@ctype":"paragraph","componentStyle":{"@ctype":"componentStyle","align":"justify","fontFamily":"nanumgothic","fontSize":"T3","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","value":"<span>유적으로만 판단하면,<\u002Fspan><span> 고대 조선과 그리스가 비슷한 시기에 비슷한 시설을&nbsp;개발했다. <br><\u002Fspan><span><br><\u002Fspan><span>그리스의 하이퍼코스트가 주로 목욕물을 덥히기 위한 시설이었다면, 조선의 구들은 생활의 필수적인 요소인 난방과 취사를 동시에 해결하는 시설이었다.&nbsp;두 시설의 용도와 기원이 다른 만큼 두 민족의 문화적 감각이나 태도에서도 차이도 크게 난다. 두 시설의 차이가 만드는 문화적 역사적 의미를 보자.<br><\u002Fspan><span><\u002Fspan>","hasDropCap":false},{"@ctype":"imageStrip","componentStyle":{"@ctype":"componentStyle","align":"extend","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","caption":"왼쪽 : 단군, 오른쪽 : 소크라테스                          출처 : wikimedia","captionLink":"","components":[{"@ctype":"image","componentStyle":{"@ctype":"componentStyle","align":"left","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","src":"https:\u002F\u002Fpost-phinf.pstatic.net\u002FMjAyMDAxMDlfODUg\u002FMDAxNTc4NTY1NzM5NzE5.IJjRyOcvFB68OyJXIcnTQw5k54dSMsJUGd1rIdX7YAkg.58Idth3abhzAVbcqxQNKCbcA8mhxH5yP5bqtdmmiKp0g.JPEG\u002FDangun.jpg?type=w1200","path":"\u002FMjAyMDAxMDlfODUg\u002FMDAxNTc4NTY1NzM5NzE5.IJjRyOcvFB68OyJXIcnTQw5k54dSMsJUGd1rIdX7YAkg.58Idth3abhzAVbcqxQNKCbcA8mhxH5yP5bqtdmmiKp0g.JPEG\u002FDangun.jpg","domain":"https:\u002F\u002Fpost-phinf.pstatic.net","width":140,"widthRatio":47.15984147952444,"height":210,"originalWidth":140,"originalHeight":210,"offsetCenterXRatio":0.0,"offsetCenterYRatio":0.0,"backgroundPositionX":"50%","backgroundPositionY":"50%","alt":"Dangun.jpg","caption":"","captionLink":"","fileSize":5818,"animationGIF":false,"fileName":"Dangun.jpg","generationFormat":"normal","displayFormat":"normal","uploadedLocal":true,"represent":false},{"@ctype":"image","componentStyle":{"@ctype":"componentStyle","align":"justify","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","src":"https:\u002F\u002Fpost-phinf.pstatic.net\u002FMjAyMDAxMDlfMTMg\u002FMDAxNTc4NTY1NzMwNDcw.-tSu_tLNDMlGPn1s5UD_fdSChLBVTidnJiqllqJ35n0g.5-77-pdap1InU59DqbAcMKilkFbnyN_V45Rrt3SN9U4g.JPEG\u002F800px-Socrates_Pio-Clementino_Inv314.jpg?type=w1200","path":"\u002FMjAyMDAxMDlfMTMg\u002FMDAxNTc4NTY1NzMwNDcw.-tSu_tLNDMlGPn1s5UD_fdSChLBVTidnJiqllqJ35n0g.5-77-pdap1InU59DqbAcMKilkFbnyN_V45Rrt3SN9U4g.JPEG\u002F800px-Socrates_Pio-Clementino_Inv314.jpg","domain":"https:\u002F\u002Fpost-phinf.pstatic.net","width":800,"widthRatio":52.84015852047557,"height":1071,"originalWidth":800,"originalHeight":1071,"offsetCenterXRatio":0.0,"offsetCenterYRatio":0.0,"backgroundPositionX":"50%","backgroundPositionY":"50%","alt":"800px-Socrates_Pio-Clementino_Inv314.jpg","caption":"","captionLink":"","fileSize":182081,"animationGIF":false,"fileName":"800px-Socrates_Pio-Clementino_Inv314.jpg","generationFormat":"normal","displayFormat":"normal","uploadedLocal":true,"represent":false}]},{"@ctype":"paragraph","componentStyle":{"@ctype":"componentStyle","align":"justify","fontFamily":"nanumgothic","fontSize":"T3","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","value":"<span><br><\u002Fspan><span>첫째, 시설을 사용하고 발전시킨 주체가 다르다. <br><\u002Fspan><span><br><\u002Fspan><span>하이퍼코스트의 경우 견고한 돌집을 짓는 이들이 목욕 시설로 개발한 것이, 일부 난방용으로 확대된 것으로 보인다. 그러니 돌집을 지을 수 없는 이들이라면 사용할 수 없었다. 목욕이 난방에 우선했다는 것도 하이퍼코스트가 넉넉한 사람들의 편의 시설로 출발한 것임을&nbsp;알 수 있다.<br><\u002Fspan><span><br><\u002Fspan><span>그러나 구들은 민초들이 머물던 유적에서 발견된다. 구들을 발전시킨 주체가 지배계층이 아니라는 의미다. 민초들이 추위를 견디고 음식을 하기 위해 개발한 것이 구들이다. 이후 구들을 한결같이 아끼고 사랑한 것도 민중이고,&nbsp;조선 후기의 완벽한 형태의 구들을 발전시킨 공에서도 백성의 몫을 빼면 안 된다.<br><\u002Fspan><span><br><\u002Fspan><span>그리하여,&nbsp;하이퍼코스트는 <\u002Fspan><span>지배계층이 뒤바뀌는 혼돈의 중세 시대를 지나면서 역사에서 사라지지만, 구들은 지배 계층의 부침과&nbsp;관계없이&nbsp;이 땅에서 사라진 적이 없다. 그리하여 구들의 주인은 이 땅의 백성이다.<br><\u002Fspan><span><\u002Fspan><span><br><\u002Fspan><span><br><\u002Fspan><span>둘째, 필수품과 사치품<br><\u002Fspan><span><br><\u002Fspan><span>하이퍼코스트를 사용하기 위해서는 건축재료가 기본적으로 돌이다. 화재에서 집을 보호해야 하기 때문이다. 그리고 물을 덥힐 수 있는 금속도 필요하다. 당시 커다란 금속 제품을 사용한다는 건 생산력이 극히 낮은 시대라는 점을 감안하면&nbsp;지극히 사치스러운 모습이다. 즉 하이퍼코스트는 사치품이다.<br><\u002Fspan><span><br><\u002Fspan><span>이에 비해서 한옥의 구들은 난방과 취사라는 긴요한 필요성에서 출발한다. <br><\u002Fspan><span>한겨울 중요한 건 깨끗한 몸이 아니라 따뜻한 몸이다. 그렇다고 난방을 위해&nbsp;열을 다 쓰면 취사를 제대로 할 수 없어서 생존이 위협받는다. 그래서 난방과 취사를 동시에 해결하는 방향으로 시설이 발달하는데, 이것이 구들이다.&nbsp;부뚜막과 아궁이를 하나로 만든 건 매우 창의적인 것으로, 이는&nbsp;백성 모두에게 중요한 시설로 필수품이었다.<br><\u002Fspan><span><\u002Fspan><span><br><\u002Fspan><span><br><\u002Fspan><span>셋째, <span>새로운 도전, 좌식문화<br><\u002Fspan><span><br><\u002Fspan><span>이전 포스트에서 언급한 것처럼 그리스에 구들이 있었다는 김남은 교수의 주장에는&nbsp;문화적인 관점이 결여되어 있다. 그리스는 기본적으로 입식문화이다. 입식문화는&nbsp;실내에서 신발을 신고 의자와 침대를 이용하는 집을 기본으로 한다. 즉 입식 생활에 기반한 문화를 좌식으로 바꾸지 않는 한 구들이 바닥난방 시설로 채택될 이유가 없다. <br><\u002Fspan><span><br><\u002Fspan><span>그러나 우리의 경우 그리스와 유럽과는 달리 과감하게 입식문화를 포기하고 좌식문화를 채택한다. 이는 매우 독특한 한국 문화를 탄생시켰는데, 다른 지역에서는 좀처럼 보기 힘든 문화다. 추운 지역에서 신발을 벗고 방바닥에 앉아서 생활은&nbsp;결코 쉽게 채택될 수 있는 문화가 아니다. <br><\u002Fspan><span><br><\u002Fspan><span>그리스에서 하이퍼코스트가 일부 바닥난방에 사용되었을 가능성이 있겠지만, 이는 극히 일부의 일탈적인 문화 행위로 보인다. 왜나하면, 좌식문화는 여러 가지 점에서 입식문화를 대체하기에 문화적 저항감이 생길 수밖에 없다. 가장 큰 문제는 지배계층의 권위와 관계된다. 그래서 우리의 경우 지배계층은 입식문화를 주로 하고,&nbsp;피지배계층은 좌식문화를 주로 했다. 그런데, 하이퍼코스트를 지배계층만이 사용하는 그리스에서는&nbsp;구조적으로 이런 형태를 채택할 수 없다.<br><\u002Fspan><span><\u002Fspan><span>&nbsp;<br><\u002Fspan><span><span>중국 남북조 시대에 쓰인 주서<\u002Fspan><span lang=\"EN-US\">(<\u002Fspan><span>周書<\u002Fspan><span lang=\"EN-US\">)<\u002Fspan><span>의 고구려조에는 이런 기록이 나온다<\u002Fspan><span lang=\"EN-US\">. ‘<\u002Fspan><span>친하거나 소원함에 구애받지 않고 같은 냇물에 들어가 목욕을 하거나 같은 방에서 잠을 잔다<\u002Fspan><span lang=\"EN-US\">.’ 같은 방에서 잔다는 것이 침대에서 잔다는 것을 의미하지는 않는 것으로 보인다. 침대가 다르다면 뭐 특별히 적을 필요가 없기 때문이다. 우리 민족의 바닥 문화는 아주 오래된 것이다. 이런&nbsp;상황은 고려도경에도 다양하게 나타난다.<br><\u002Fspan><span lang=\"EN-US\"><\u002Fspan><br><\u002Fspan><span>추운 겨울이 있는 나라에서 좌식문화는 문화 주체의 의지적인 결단이 필요하다.<br><\u002Fspan><span><\u002Fspan><br><\u002Fspan><span><br><\u002Fspan><span>넷째, 시설을 발견한 동력이 다르다.<br><\u002Fspan><span><br><\u002Fspan><span>하이퍼코스트는 개념에 의해 만들어졌을 가능성이 많다. 즉 목욕을 해야 하는데, 겨울에 따뜻한 물을 어떻게 덥혀서 사용할 것인가 하는 문제를 풀기 위해 고안한 시설일 가능성이다. 허튼고래 형태 외에 나타나는 줄고래(이것이 줄고래가 맞는다고 한다면)&nbsp;역시 개념을 선행시켜 만든 것으로 보인다.<br><\u002Fspan><span><br><\u002Fspan><span>이에 비해서 구들은 생활이 선행되었다. 즉&nbsp;조선의 백성은 밥과 난방을 해결할 목적으로 구들이라는 개념을 만들어 이 개념에 맞게 구들이라는 시설을 만든 게 아니다. 화재 위험을 최소화하면서 난방을 하고, 난방을 하면서도 취사를 하다 보니 점차적으로 구들이 발전한 것이다.&nbsp;외줄고래 ㄱ자고래 2줄고래 등으로 끊임없이 진화하면서 결국 조선 후기까지 그 모습을 계속 바꾸었다. 구들은 개념이 아니라 생활 속에서 디자인된 것이다. <br><\u002Fspan><span><br><\u002Fspan><span>그리스는 개념이 선행되어 하이퍼코스트라는 시설이&nbsp;나왔고, 조선은 생활이 선행되어 이후에 구들이라는 개념이 나온 것이다. <br><\u002Fspan><span><br><\u002Fspan><span><br><\u002Fspan><span><span>다섯째, <\u002Fspan>철학적인 그리스 예술적인 조선<br><span><br><\u002Fspan><span>그리스 로마 지역에는 도시문화가 일찍 발달했다. 집단 문화가 일찍 발달하여 인구가 밀집되어 살면서 욕장의 필요성이 강하게 요구되었고, 욕장의 물을 덥힐 방법을 고민하며 만든 것이 하이퍼코스트로 보인다. 앞에서 지적한 것처럼 특정한 목적 개념이 선행되어 나타난 시설이 하이퍼코스트다.<\u002Fspan><span><br><\u002Fspan><span><br><\u002Fspan><span>그러나 구들은 처음부터 끝까지 생활 속에서 진화하는 형태로 발전한다. 화덕에서 출발하여 부뚜막을 설치하고 이것이 길어지면서 고래가 되고 이것이 굴뚝으로 발전하고, 고래가 하나 둘 셋 … 늘어나면서 구들방이 되었다. <br><\u002Fspan><span><br><\u002Fspan><span>이런 특징은 전체 건축에 대한 태도에서도 나타나는데, 그들은 건축을 비례로 접근하여 건물 자체에 집중한다. 즉 건축을 개념화한다. 그러나 우리는 건축을 건물 자체가 아니라 주변과의 흐름으로 파악한다. 전자가 명사적이라고 하면, 후자는 동사적이라고 할 수 있다. 전자가 정태적이라고 하면 후자는 동태적이라고 할 수 있다. 그래서 명사를 이용한 개념화된 도구를 지향한 그리스 문화는 철학적 인간으로 결실을 맺었고, 동사를 이용한 흐름으로서의 도구에 관심이 있는 한국 문화은 예술적 인간으로 결실을 맺었다.<br><\u002Fspan><span><\u002Fspan><\u002Fspan>","hasDropCap":false},{"@ctype":"horizontalLine","componentStyle":{"@ctype":"componentStyle","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default"},{"@ctype":"paragraph","componentStyle":{"@ctype":"componentStyle","align":"justify","fontFamily":"nanumgothic","fontSize":"T3","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","value":"<span><span>이 지점에서 책 하나를 소개한다. 그래서 한국인, 한국의 독특한 좌식문화가 만든 한국인의 심리 행태에 대해 적은&nbsp;글이다. 한국인이라면, 그리고 한국인의 정서 심리 행태에 대해 궁금한 외국인이라면, 꼭 읽어야 할 책이다.<br><\u002Fspan><span><a class=\"se_link\" href=\"https:\u002F\u002Fbook.naver.com\u002Fbookdb\u002Fbook_detail.nhn?bid=13464647\" target=\"_blank\">https:\u002F\u002Fbook.naver.com\u002Fbookdb\u002Fbook_detail.nhn?bid=13464647<\u002Fa><\u002Fspan><\u002Fspan>","hasDropCap":false},{"@ctype":"oglink","componentStyle":{"@ctype":"componentStyle","align":"left","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","title":"그래서 한국인","thumbnail":{"@ctype":"thumbnail","src":"https:\u002F\u002Fbookthumb-phinf.pstatic.net\u002Fcover\u002F134\u002F646\u002F13464647.jpg?type=m5","width":137,"height":206},"link":"https:\u002F\u002Fbook.naver.com\u002Fbookdb\u002Fbook_detail.nhn?bid=13464647","desc":"한국인 특유의 심리와 행동양식의 근원을 찾아가는 책너와 나를 알아가는 한국인 행동설명서 [그래서 한국인]. 한국인에 대해 얼마나 아시나요? 한국인 특유의 심리와 행동양식의 근원을 찾아가는 책. 한국은 세계 6위의 수출국이다. 그만큼 외국인과 교류가 많고 그들에게 한국과 한국인에 대해 설명해야 할 경우도 많다. 그런데 정작 한국인은 한국인에 대해 잘 모른다. 서로를 이해하지 못해서인지 한국 사회의 내부 갈등은 쉽게 커져서 큰 앙금으로 남기 일쑤다. 생각해 보면 한국인은 정말 독특하다. 그런데 그 이유를 잘 모른다. 한국인은 왜 칭찬에","domain":"book.naver.com","isVideo":false},{"@ctype":"horizontalLine","componentStyle":{"@ctype":"componentStyle","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default"},{"@ctype":"paragraph","componentStyle":{"@ctype":"componentStyle","align":"justify","fontFamily":"nanumgothic","fontSize":"T3","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","value":"<span><span>물론 그리스에서 철학이 발달한 이유로는 인도유럽어족의 언어적 특징을 꼽을 수 있다. 우리가&nbsp;<\u002Fspan><span>동양 종교라고 믿는&nbsp;불교 역시 인도유럽어족에 뿌리를 두고 있다는 점을 생각하면, 그리스가 철학적 인간이 된 가장 큰 뿌리를 언어일 수 있다.&nbsp;우리 언어는 명사보다&nbsp;동사 등 용언이 발달했는데, 이는 철학적 사유보다는 예술적 행위를 선행시키는 언어라고 할 수 있다.<br><\u002Fspan><span><br><\u002Fspan><span><span>언어가 아닌 생활 속에서 디자인을 통한 구들의 발견은 한국인을 더욱더 예술적으로 만들었다. 거기다가&nbsp;좌식생활로 인해 매우&nbsp;촉각적인 문화를 발전시킨다.<\u002Fspan> 관념은 대상에서 멀어질 때 형성된다. <\u002Fspan><span>대상에 밀착하면 이를 관념화하여 개념으로 만드는 능력이 떨어질 수 있다. 생활양식으로 관념능력을 비교한다면,&nbsp;입식 생활이 좌식생활보다 더 철학적이라고 할 수 있다. (참 잊지 말아야 할 건 이 모든 토대는 자연이라는 점이다. 자연이 선행하고, 이에 뒤미쳐 언어와 집이 있다.)<br><\u002Fspan><span><br><\u002Fspan><span><\u002Fspan><\u002Fspan>","hasDropCap":false},{"@ctype":"sticker","seq":10,"componentStyle":{"@ctype":"componentStyle","align":"left","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","packCode":"linesweet_01","original":{"@ctype":"thumbnail","src":"https:\u002F\u002Fstorep-phinf.pstatic.net\u002Flinesweet_01\u002Foriginal_10.gif","width":185,"height":160},"animated":true},{"@ctype":"paragraph","componentStyle":{"@ctype":"componentStyle","align":"justify","fontFamily":"nanumgothic","fontSize":"T3","fontBold":false,"fontUnderline":false,"fontItalic":false},"layout":"default","value":"<span><span>나이스 공감!!<br><\u002Fspan><span><br><\u002Fspan><br><\u002Fspan>","hasDropCap":false}]},"contentsMeta":{},"publishMeta":{"@service":"post","containSharedLink":false,"linkFacebook":false,"linkTwitter":false,"cmtType":"0","cmtOrderType":"0","templateType":"ugc_simple","status":10,"blogCategoryNo":118,"blogPublish":true,"facebookPublish":false,"isLinkFacebook":false,"isLinkTwitter":false,"openType":0,"searchNotAllowed":0,"cloudTags":[],"seriesNo":564034,"categoryNo":58,"twitterPublish":false,"volumeAuthorComment":"","volumeNo":27313186,"termsLastUpdateDate":"","termsSynonym":"","serviceCode":"0"}});
+
+    window.onload = function(){
+        
+        // 로그 기록 셋팅
+        $SE_LOGGER.initialize({
+            serviceId: "post",
+            docType: "normal",
+            deviceType: "desktop",
+            buildProfile: "real",
+            userId: htInitConfig.USER_INFO.id,
+            nickName: htInitConfig.USER_INFO.nickName
+        });
+
+        
+
+        
+            
+            
+            $SEEditorLauncher.launch(htInitConfig);
+            
+        
+    
+    };
+})();
+</script>
+
+
+
+
+
+<script src="./dangun_files/se_lib_core_1.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_161426038222119612" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_core_2.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_161426038222119612" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_core_3.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_161426038222119612" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_core_4.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_161426038222119612" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_core_plugin.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_161426038233818901" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_ext_plugin_1.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260382392443652" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_ext_plugin_2.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260382392443652" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_lib_ext_plugin_3.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260382392443652" data-mode="parallel" crossorigin="anonymous"></script><div id="toast-container" class="pop_toast_wrap"><div class="pop_toast"><div class="toast_msg_wrap"></div></div></div><script src="./dangun_files/se_common_1.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383084374069" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_common_2.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383084374069" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/se_template_common.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383119621295" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_template_control.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383119621295" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_pre.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383119621295" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_model.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_data.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_history.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_common.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_side.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_control_top.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><script src="./dangun_files/post_desktop_normal_editor_app.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1614260383159689268" data-mode="parallel" crossorigin="anonymous"></script><!--[ Photoeditor Template : Start ]-->
+<div class="npe_wrap npe_se_wrap">
+<header class="npe_header">
+<div class="npe_header_logo_area npe_logo_area">
+<h1 class="npe_logo npe_se_logo"><em>SmartEditor 3.0</em></h1>
+</div>
+<div class="npe_header_func_btn_area npe_btn_area">
+<button type="button" class="npe_btn_icon npe_btn_undo">
+<span class="npe_btn_title _txt_undo-text">이전</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_redo">
+<span class="npe_btn_title _txt_redo-text">다시</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_original">
+<span class="npe_btn_title _txt_return_origin-text">초기화</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_download">
+<span class="npe_btn_title _txt_image_save-text">사진저장</span>
+</button>
+</div>
+<div class="npe_header_submit_btn_area npe_btn_area">
+<button type="button" class="npe_btn_header npe_btn_cancel">
+<span class="npe_btn_title _txt_cancel-text">취소</span>
+</button>
+<button type="button" class="npe_btn_header npe_btn_submit">
+<span class="npe_btn_title _txt_done-text">완료</span>
+</button>
+</div>
+</header>
+<nav class="npe_control_wrap npe_control_left">
+<div class="npe_control_area">
+<button type="button" data-targetcontrol="resize" class="npe_btn_control npe_btn_resize _useResize-show _txt_resize-text">크기</button>
+<button type="button" data-targetcontrol="crop" class="npe_btn_control npe_btn_crop _useCrop-show _txt_crop-text">자르기, 회전</button>
+<button type="button" data-targetcontrol="filter" class="npe_btn_control npe_btn_filter _useFilter-show _txt_filter-text">필터</button>
+<button type="button" data-targetcontrol="adjust" class="npe_btn_control npe_btn_effect _useAdjust-show _txt_adjust-text">보정</button>
+<button type="button" data-targetcontrol="photoFrame" class="npe_btn_control npe_btn_frame _usePhotoFrame-show _txt_frame-text">액자</button>
+<button type="button" data-targetcontrol="signature" class="npe_btn_control npe_btn_sign _useSignature-show _txt_signature-text">서명</button>
+<button type="button" data-targetcontrol="mosaic" class="npe_btn_control npe_btn_mosaic _useMosaic-show _txt_mosaic-text">모자이크</button>
+<button type="button" data-targetcontrol="text" class="npe_btn_control _useText-show npe_btn_text _txt_text-text">텍스트</button>
+<button type="button" data-targetcontrol="sticker" class="npe_btn_control _useSticker-show npe_btn_sticker _txt_sticker-text">스티커</button>
+<button type="button" data-targetcontrol="clip" class="npe_btn_control _useClip-show npe_btn_mask _txt_clip-text">마스크</button>
+</div>
+</nav>
+<section class="npe_edit_wrap">
+<div class="npe_canvas_wrap" id="npe_canvas_wrap">
+<canvas class="npe_canvas"></canvas>
+<div class="npe_deg_wrap">
+<div class="npe_deg">
+</div>
+<div class="npe_deg_option">
+<span class="npe_deg_cursor"></span>
+<button type="button" class="npe_btn_deg_auto"><span class="npe_auto_title _txt_auto-text">자동</span></button>
+</div>
+</div>
+<div class="npe_size_wrap">
+<div class="npe_size_width">
+<span class="npe_size_width_text">W <em class="npe_size_width_num">3000</em></span>
+</div>
+<div class="npe_size_height">
+<span class="npe_size_height_text">H <em class="npe_size_height_num">3000</em></span>
+</div>
+</div>
+<textarea class="npe_text_wrap" wrap="off" spellcheck="false"></textarea>
+<div class="npe_text_hidden"></div>
+</div>
+<div class="npe_sign_wrap">
+<div class="npe_sign_coord_w">
+W <span class="npe_sign_coord_num"></span>
+</div>
+<div class="npe_sign_coord_h">
+H <span class="npe_sign_coord_num"></span>
+</div>
+</div>
+<div class="npe_notice_toast">
+<span class="npe_notice_toast_text">토스트 메시지</span>
+</div>
+<div class="npe_control_detail_wrap">
+<div class="npe_control_detail npe_control_resize" data-control="resize">
+<strong class="npe_blind">크기</strong>
+<div class="npe_resize_area npe_resize_function_area">
+<button type="button" class="npe_btn_detail_text npe_btn_detail_resize" data-resize="original"><span class="npe_detail_title"><span class="npe_original_text _txt_original_btn-text">원본</span> <span class="npe_original_size"><span class="_width-text"></span> x <span class="_height-text"></span></span></span></button>
+<span class="npe_btn_detail_text npe_btn_detail_resize npe_btn_direct_input _useResizeCustom-keep" data-resize="custom"><input type="text" class="npe_detail_title _txt_direct-attr _txt_direct-val" maxlength="5" data-placeholder="#txt_direct#"><button type="button" class="npe_btn_direct_input_confirm"></button></span>
+</div>
+<div class="npe_resize_area npe_resize_preset_area _resizePreset _resizePreset-list">
+<script type="text/tw-template"></script>
+</div>
+<span class="npe_detail_bar"></span>
+<div class="npe_resize_area npe_resize_apply_area">
+<button type="button" class="npe_btn_icon npe_btn_apply_all"><span class="npe_btn_title _txt_apply_all-text">모든 사진 적용</span></button>
+<button type="button" class="npe_btn_icon npe_btn_apply_select"><span class="npe_btn_title _txt_apply_select-text">일부 사진 적용</span></button>
+</div>
+</div>
+<div class="npe_control_detail npe_control_crop _cropPreset _cropPreset-list" data-control="crop">
+<strong class="npe_blind">자르기</strong>
+<button type="button" class="npe_btn_icon npe_btn_rotate">
+<span class="npe_btn_title _txt_rotate-text">회전</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_horizon">
+<span class="npe_btn_title _txt_flip_horizon-text">좌우반전</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_vertical">
+<span class="npe_btn_title _txt_flip_vertical-text">상하반전</span>
+</button>
+<script type="text/tw-template"></script>
+<span class="npe_detail_bar"></span>
+<button type="button" class="npe_btn_icon npe_btn_confirm">
+<span class="npe_btn_title _txt_confirm-text">확인</span>
+</button>
+</div>
+<div class="npe_control_detail npe_control_filter _filters" data-control="filter">
+<strong class="npe_blind">필터</strong>
+<button type="button" class="npe_filter_list_arrow npe_filter_list_prev disable"><span class="npe_blind">이전</span></button>
+<div class="npe_detail_filter_area _filters-list">
+
+                    <script type="text/tw-template"></script>
+</div>
+<button type="button" class="npe_filter_list_arrow npe_filter_list_next disable"><span class="npe_blind">다음</span></button>
+<span class="npe_detail_bar"></span>
+<button type="button" class="npe_btn_icon npe_btn_apply_all">
+<span class="npe_btn_title _txt_apply_all-text">모든 사진 적용</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_apply_select">
+<span class="npe_btn_title _txt_apply_select-text">일부 사진 적용</span>
+</button>
+<div class="npe_control_detail_slide_area npe_slide_area">
+<button class="npe_btn_favorite"><span class="npe_blind">즐겨찾기</span></button>
+<input type="range" min="0" max="100" step="1" data-base="0" data-basedata="0" data-mindata="0" data-maxdata="1" class="npe_slide npe_slide_filter on">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track" style="width: 50%;"></div>
+<div class="npe_slide_background_thumb" style="left: 50%;"></div>
+<span class="npe_control_detail_slide_number npe_slide_number" style="left: 50%;">50</span>
+</div>
+</div>
+</div>
+<div class="npe_control_detail npe_control_effect" data-control="adjust">
+<strong class="npe_blind">보정</strong>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect auto_effect" data-adjust="auto_adjust">
+<span class="npe_btn_title _txt_auto_adjustment-text">자동보정</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect brightness on" data-adjust="brightness">
+<span class="npe_btn_title _txt_brightness-text">밝기</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect chroma" data-adjust="saturation">
+<span class="npe_btn_title _txt_saturation-text">채도</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect resolution" data-adjust="sharpen">
+<span class="npe_btn_title _txt_sharpen-text">선명도</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect color" data-adjust="kelvin">
+<span class="npe_btn_title _txt_kelvin-text">색온도</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect contrast" data-adjust="contrast">
+<span class="npe_btn_title _txt_contrast-text">대비</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect blur" data-adjust="vignetteBlur">
+<span class="npe_btn_title">블러</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_effect vignetting" data-adjust="vignette">
+<span class="npe_btn_title">비네팅</span>
+</button>
+<div class="npe_control_detail_slide_area npe_slide_area">
+<input type="range" min="-100" max="100" step="1" data-base="0" data-basedata="0" data-mindata="-0.4" data-maxdata="0.4" class="npe_slide npe_slide_brightness on" data-adjust="brightness">
+<input type="range" min="-100" max="100" step="1" data-base="0" data-basedata="1" data-mindata="0" data-maxdata="4" class="npe_slide npe_slide_chroma" data-adjust="saturation">
+<input type="range" min="-100" max="100" step="1" data-base="0" data-basedata="0" data-mindata="-0.3" data-maxdata="0.3" class="npe_slide npe_slide_resolution" data-adjust="sharpen">
+<input type="range" min="-100" max="100" step="1" data-base="0" data-basedata="0" data-mindata="-0.3" data-maxdata="0.3" class="npe_slide npe_slide_color" data-adjust="kelvin">
+<input type="range" min="-100" max="100" step="1" data-base="0" data-basedata="1" data-mindata="0.5" data-maxdata="1.5" class="npe_slide npe_slide_constrast" data-adjust="contrast">
+<input type="range" min="-100" max="100" step="1" data-base="0" data-basedata="0" data-mindata="-1" data-maxdata="1" class="npe_slide npe_slide_blur" data-adjust="vignetteBlur">
+<input type="range" min="0" max="100" step="1" data-base="0" data-basedata="0" data-mindata="0" data-maxdata="1" class="npe_slide npe_slide_vignetting" data-adjust="vignette">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track"></div>
+<div class="npe_slide_background_thumb"></div>
+<span class="npe_control_detail_slide_number npe_slide_number">0</span>
+<i class="npe_icon_blur_radial" style="display: none;"></i>
+<i class="npe_icon_blur_horizontal" style="display: none;"></i>
+</div>
+</div>
+</div>
+<div class="npe_control_detail npe_control_frame _frames _frames-list" data-control="photoFrame" id="">
+<strong class="npe_blind">액자</strong>
+<script type="text/tw-template"></script><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="0">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_none_apply-text"></span>
+</button><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="1">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+<img alt="" class="npe_img_frame _src-src _src-keep" src="./dangun_files/npe_frame_1.png">
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_frame_1-text"></span>
+</button><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="2">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+<img alt="" class="npe_img_frame _src-src _src-keep" src="./dangun_files/npe_frame_2.png">
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_frame_2-text"></span>
+</button><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="3">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+<img alt="" class="npe_img_frame _src-src _src-keep" src="./dangun_files/npe_frame_3.png">
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_frame_3-text"></span>
+</button><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="4">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+<img alt="" class="npe_img_frame _src-src _src-keep" src="./dangun_files/npe_frame_6.png">
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_frame_6-text"></span>
+</button><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="5">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+<img alt="" class="npe_img_frame _src-src _src-keep" src="./dangun_files/npe_frame_4.png">
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_frame_4-text"></span>
+</button><button type="button" class="npe_btn_detail_thumb npe_btn_detail_frame _code-attr _item _new" data-frame="6">
+<div class="npe_detail_thumb_area">
+<span class="npe_detail_thumb">
+<img alt="" class="npe_img_frame _src-src _src-keep" src="./dangun_files/npe_frame_5.png">
+</span>
+</div>
+<span class="npe_detail_title _i18n-addI18nTextClass _txt_frame_5-text"></span>
+</button>
+<span class="npe_detail_bar"></span>
+<button type="button" class="npe_btn_icon npe_btn_apply_all"><span class="npe_btn_title _txt_apply_all-text">모든 사진 적용</span></button>
+<button type="button" class="npe_btn_icon npe_btn_apply_select"><span class="npe_btn_title _txt_apply_select-text">일부 사진 적용</span></button>
+</div>
+<div class="npe_control_detail npe_control_sign" data-control="signature">
+<strong class="npe_blind">서명</strong>
+<button type="button" class="npe_btn_icon npe_btn_sign_none on" data-signature="none">
+<span class="npe_btn_title _txt_none_signature-text">서명 안함</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_sign_image" data-signature="image">
+<span class="npe_btn_title _txt_image_signature-text">이미지 서명</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_sign_text" data-signature="text">
+<span class="npe_btn_title _txt_text_signature-text">텍스트 서명</span>
+</button>
+<span class="npe_detail_bar"></span>
+<button type="button" class="npe_btn_icon npe_btn_apply_all">
+<span class="npe_btn_title _txt_apply_all-text">모든 사진 적용</span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_apply_select">
+<span class="npe_btn_title _txt_apply_select-text">일부 사진 적용</span>
+</button>
+<div class="npe_detail_option npe_detail_option_sign_image" data-signature="image">
+<span class="npe_sign_image_data _txt_signature_image_input-text">400x200px, 200kb 이하</span>
+<label class="npe_btn_detail npe_btn_detail_text">
+<input class="npe_sign_image_file npe_blind" type="file" accept="image/*">
+<span class="npe_detail_title _txt_signature_image_load-text">불러오기</span>
+</label>
+</div>
+<div class="npe_detail_option npe_detail_option_sign_text" data-signature="text">
+<span class="npe_sign_text_input_area">
+<input type="text" class="npe_sign_text_input _txt_signature_text_placeholder-placeholder" spellcheck="false" readonly="">
+</span>
+<div class="npe_text_tool_area">
+<span class="npe_text_tool npe_text_font_family" data-clickcode="PTE_G_FONT">
+<span class="npe_tool_title" title="글꼴">나눔고딕</span>
+<ul class="npe_tool_list npe_text_font_family_list _fonts _fonts-list" id="">
+<script type="text/tw-template"></script><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_default-text" data-title="기본서체" data-type="default" title="기본서체" data-default="true" style="font-family: &quot;malgun gothic&quot;, &quot;맑은 고딕&quot;, &quot;Helvetica Neue&quot;, helvetica, AppleSDGothicNeo-Regular, sans-serif, simhei;">기본서체</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_nanumgothic-text" data-title="나눔고딕" data-type="nanumgothic" title="나눔고딕" style="font-family: 나눔고딕, nanumgothic, se_NanumGothic, AppleSDGothicNeo-Regular, sans-serif, simhei;">나눔고딕</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_nanummyeongjo-text" data-title="나눔명조" data-type="nanummyeongjo" title="나눔명조" style="font-family: 나눔명조, nanummyeongjo, se_NanumMyeongjo, serif, simsun;">나눔명조</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_nanumbarungothic-text" data-title="바른고딕" data-type="nanumbarungothic" title="바른고딕" style="font-family: 나눔바른고딕, nanumbarungothic, se_NanumBarunGothic, AppleSDGothicNeo-Regular, sans-serif, simhei;">바른고딕</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Abel" data-type="Abel" title="Abel" style="font-family: Abel, sans-serif;">Abel</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Arvo" data-type="Arvo" title="Arvo" style="font-family: Arvo, serif;">Arvo</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Bungee Shade" data-type="Bungee Shade" title="Bungee Shade" style="font-family: &quot;Bungee Shade&quot;, cursive;">Bungee Shade</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Cookie" data-type="Cookie" title="Cookie" style="font-family: Cookie, cursive;">Cookie</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Crimson Text" data-type="Crimson Text" title="Crimson Text" style="font-family: &quot;Crimson Text&quot;, serif;">Crimson Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Dancing Script" data-type="Dancing Script" title="Dancing Script" style="font-family: &quot;Dancing Script&quot;, cursive;">Dancing Script</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Dosis" data-type="Dosis" title="Dosis" style="font-family: Dosis, sans-serif;">Dosis</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Duru Sans" data-type="Duru Sans" title="Duru Sans" style="font-family: &quot;Duru Sans&quot;, sans-serif;">Duru Sans</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Inconsolata" data-type="Inconsolata" title="Inconsolata" style="font-family: Inconsolata, monospace;">Inconsolata</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Kreon" data-type="Kreon" title="Kreon" style="font-family: Kreon, serif;">Kreon</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lancelot" data-type="Lancelot" title="Lancelot" style="font-family: Lancelot, cursive;">Lancelot</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lobster" data-type="Lobster" title="Lobster" style="font-family: Lobster, cursive;">Lobster</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Mandali" data-type="Mandali" title="Mandali" style="font-family: Mandali, sans-serif;">Mandali</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Noto Sans" data-type="Noto Sans" title="Noto Sans" style="font-family: &quot;Noto Sans&quot;, sans-serif;">Noto Sans</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Noto Serif" data-type="Noto Serif" title="Noto Serif" style="font-family: &quot;Noto Serif&quot;, serif;">Noto Serif</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Podkova" data-type="Podkova" title="Podkova" style="font-family: Podkova, serif;">Podkova</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Quicksand" data-type="Quicksand" title="Quicksand" style="font-family: Quicksand, sans-serif;">Quicksand</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Rasa" data-type="Rasa" title="Rasa" style="font-family: Rasa, serif;">Rasa</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sanchez" data-type="Sanchez" title="Sanchez" style="font-family: Sanchez, &quot;serif &quot;;">Sanchez</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Arial" data-type="Arial" title="Arial" style="font-family: Arial, sans-serif, simhei;">Arial</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Arial Black" data-type="Arial Black" title="Arial Black" style="font-family: &quot;Arial Black&quot;, sans-serif, simhei;">Arial Black</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Batang" data-type="Batang" title="Batang" style="font-family: Batang, sans-serif, simhei;">Batang</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="BatangChe" data-type="BatangChe" title="BatangChe" style="font-family: BatangChe, sans-serif, simhei;">BatangChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Book Antiqua" data-type="Book Antiqua" title="Book Antiqua" style="font-family: &quot;Book Antiqua&quot;, sans-serif, simhei;">Book Antiqua</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Calibri" data-type="Calibri" title="Calibri" style="font-family: Calibri, sans-serif, simhei;">Calibri</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Calibri Light" data-type="Calibri Light" title="Calibri Light" style="font-family: &quot;Calibri Light&quot;, sans-serif, simhei;">Calibri Light</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Calisto MT" data-type="Calisto MT" title="Calisto MT" style="font-family: &quot;Calisto MT&quot;, sans-serif, simhei;">Calisto MT</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Cambria" data-type="Cambria" title="Cambria" style="font-family: Cambria, sans-serif, simhei;">Cambria</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Cambria Math" data-type="Cambria Math" title="Cambria Math" style="font-family: &quot;Cambria Math&quot;, sans-serif, simhei;">Cambria Math</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Candara" data-type="Candara" title="Candara" style="font-family: Candara, sans-serif, simhei;">Candara</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Century Gothic" data-type="Century Gothic" title="Century Gothic" style="font-family: &quot;Century Gothic&quot;, sans-serif, simhei;">Century Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Comic Sans MS" data-type="Comic Sans MS" title="Comic Sans MS" style="font-family: &quot;Comic Sans MS&quot;, sans-serif, simhei;">Comic Sans MS</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Consolas" data-type="Consolas" title="Consolas" style="font-family: Consolas, sans-serif, simhei;">Consolas</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Constantia" data-type="Constantia" title="Constantia" style="font-family: Constantia, sans-serif, simhei;">Constantia</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Copperplate Gothic" data-type="Copperplate Gothic" title="Copperplate Gothic" style="font-family: &quot;Copperplate Gothic&quot;, sans-serif, simhei;">Copperplate Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Copperplate Gothic Light" data-type="Copperplate Gothic Light" title="Copperplate Gothic Light" style="font-family: &quot;Copperplate Gothic Light&quot;, sans-serif, simhei;">Copperplate Gothic Light</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Corbel" data-type="Corbel" title="Corbel" style="font-family: Corbel, sans-serif, simhei;">Corbel</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Courier New" data-type="Courier New" title="Courier New" style="font-family: &quot;Courier New&quot;, sans-serif, simhei;">Courier New</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Dotum" data-type="Dotum" title="Dotum" style="font-family: Dotum, sans-serif, simhei;">Dotum</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="DotumChe" data-type="DotumChe" title="DotumChe" style="font-family: DotumChe, sans-serif, simhei;">DotumChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Ebrima" data-type="Ebrima" title="Ebrima" style="font-family: Ebrima, sans-serif, simhei;">Ebrima</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Franklin Gothic Medium" data-type="Franklin Gothic Medium" title="Franklin Gothic Medium" style="font-family: &quot;Franklin Gothic Medium&quot;, sans-serif, simhei;">Franklin Gothic Medium</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gabriola" data-type="Gabriola" title="Gabriola" style="font-family: Gabriola, sans-serif, simhei;">Gabriola</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gadugi" data-type="Gadugi" title="Gadugi" style="font-family: Gadugi, sans-serif, simhei;">Gadugi</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Georgia" data-type="Georgia" title="Georgia" style="font-family: Georgia, sans-serif, simhei;">Georgia</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gulim" data-type="Gulim" title="Gulim" style="font-family: Gulim, sans-serif, simhei;">Gulim</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="GulimChe" data-type="GulimChe" title="GulimChe" style="font-family: GulimChe, sans-serif, simhei;">GulimChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gungsuh" data-type="Gungsuh" title="Gungsuh" style="font-family: Gungsuh, sans-serif, simhei;">Gungsuh</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="GungsuhChe" data-type="GungsuhChe" title="GungsuhChe" style="font-family: GungsuhChe, sans-serif, simhei;">GungsuhChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Impact" data-type="Impact" title="Impact" style="font-family: Impact, sans-serif, simhei;">Impact</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Javanese Text" data-type="Javanese Text" title="Javanese Text" style="font-family: &quot;Javanese Text&quot;, sans-serif, simhei;">Javanese Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Leelawadee" data-type="Leelawadee" title="Leelawadee" style="font-family: Leelawadee, sans-serif, simhei;">Leelawadee</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Leelawadee UI" data-type="Leelawadee UI" title="Leelawadee UI" style="font-family: &quot;Leelawadee UI&quot;, sans-serif, simhei;">Leelawadee UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lucida Console" data-type="Lucida Console" title="Lucida Console" style="font-family: &quot;Lucida Console&quot;, sans-serif, simhei;">Lucida Console</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lucida Sans Unicode" data-type="Lucida Sans Unicode" title="Lucida Sans Unicode" style="font-family: &quot;Lucida Sans Unicode&quot;, sans-serif, simhei;">Lucida Sans Unicode</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Malgun Gothic" data-type="Malgun Gothic" title="Malgun Gothic" style="font-family: &quot;Malgun Gothic&quot;, sans-serif, simhei;">Malgun Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Marlett" data-type="Marlett" title="Marlett" style="font-family: Marlett, sans-serif, simhei;">Marlett</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Himalaya" data-type="Microsoft Himalaya" title="Microsoft Himalaya" style="font-family: &quot;Microsoft Himalaya&quot;, sans-serif, simhei;">Microsoft Himalaya</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft JhengHei" data-type="Microsoft JhengHei" title="Microsoft JhengHei" style="font-family: &quot;Microsoft JhengHei&quot;, sans-serif, simhei;">Microsoft JhengHei</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft JhengHei UI" data-type="Microsoft JhengHei UI" title="Microsoft JhengHei UI" style="font-family: &quot;Microsoft JhengHei UI&quot;, sans-serif, simhei;">Microsoft JhengHei UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft New Tai Lue" data-type="Microsoft New Tai Lue" title="Microsoft New Tai Lue" style="font-family: &quot;Microsoft New Tai Lue&quot;, sans-serif, simhei;">Microsoft New Tai Lue</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft PhagsPa" data-type="Microsoft PhagsPa" title="Microsoft PhagsPa" style="font-family: &quot;Microsoft PhagsPa&quot;, sans-serif, simhei;">Microsoft PhagsPa</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Sans Serif" data-type="Microsoft Sans Serif" title="Microsoft Sans Serif" style="font-family: &quot;Microsoft Sans Serif&quot;, sans-serif, simhei;">Microsoft Sans Serif</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Tai Le" data-type="Microsoft Tai Le" title="Microsoft Tai Le" style="font-family: &quot;Microsoft Tai Le&quot;, sans-serif, simhei;">Microsoft Tai Le</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Uighur" data-type="Microsoft Uighur" title="Microsoft Uighur" style="font-family: &quot;Microsoft Uighur&quot;, sans-serif, simhei;">Microsoft Uighur</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft YaHei" data-type="Microsoft YaHei" title="Microsoft YaHei" style="font-family: &quot;Microsoft YaHei&quot;, sans-serif, simhei;">Microsoft YaHei</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft YaHei UI" data-type="Microsoft YaHei UI" title="Microsoft YaHei UI" style="font-family: &quot;Microsoft YaHei UI&quot;, sans-serif, simhei;">Microsoft YaHei UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Yi Baiti" data-type="Microsoft Yi Baiti" title="Microsoft Yi Baiti" style="font-family: &quot;Microsoft Yi Baiti&quot;, sans-serif, simhei;">Microsoft Yi Baiti</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MingLiU-ExtB" data-type="MingLiU-ExtB" title="MingLiU-ExtB" style="font-family: MingLiU-ExtB, sans-serif, simhei;">MingLiU-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="PMingLiU-ExtB" data-type="PMingLiU-ExtB" title="PMingLiU-ExtB" style="font-family: PMingLiU-ExtB, sans-serif, simhei;">PMingLiU-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MingLiU_HKSCS-ExtB" data-type="MingLiU_HKSCS-ExtB" title="MingLiU_HKSCS-ExtB" style="font-family: MingLiU_HKSCS-ExtB, sans-serif, simhei;">MingLiU_HKSCS-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Mongolian Baiti" data-type="Mongolian Baiti" title="Mongolian Baiti" style="font-family: &quot;Mongolian Baiti&quot;, sans-serif, simhei;">Mongolian Baiti</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MS Gothic" data-type="MS Gothic" title="MS Gothic" style="font-family: &quot;MS Gothic&quot;, sans-serif, simhei;">MS Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MS PGothic" data-type="MS PGothic" title="MS PGothic" style="font-family: &quot;MS PGothic&quot;, sans-serif, simhei;">MS PGothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MS UI Gothic" data-type="MS UI Gothic" title="MS UI Gothic" style="font-family: &quot;MS UI Gothic&quot;, sans-serif, simhei;">MS UI Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MV Boli" data-type="MV Boli" title="MV Boli" style="font-family: &quot;MV Boli&quot;, sans-serif, simhei;">MV Boli</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Myanmar Text" data-type="Myanmar Text" title="Myanmar Text" style="font-family: &quot;Myanmar Text&quot;, sans-serif, simhei;">Myanmar Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Nirmala UI" data-type="Nirmala UI" title="Nirmala UI" style="font-family: &quot;Nirmala UI&quot;, sans-serif, simhei;">Nirmala UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="NSimSun" data-type="NSimSun" title="NSimSun" style="font-family: NSimSun, sans-serif, simhei;">NSimSun</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Palatino Linotype" data-type="Palatino Linotype" title="Palatino Linotype" style="font-family: &quot;Palatino Linotype&quot;, sans-serif, simhei;">Palatino Linotype</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe MDL2 Assets" data-type="Segoe MDL2 Assets" title="Segoe MDL2 Assets" style="font-family: &quot;Segoe MDL2 Assets&quot;, sans-serif, simhei;">Segoe MDL2 Assets</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe Print" data-type="Segoe Print" title="Segoe Print" style="font-family: &quot;Segoe Print&quot;, sans-serif, simhei;">Segoe Print</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe Script" data-type="Segoe Script" title="Segoe Script" style="font-family: &quot;Segoe Script&quot;, sans-serif, simhei;">Segoe Script</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI" data-type="Segoe UI" title="Segoe UI" style="font-family: &quot;Segoe UI&quot;, sans-serif, simhei;">Segoe UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI Emoji" data-type="Segoe UI Emoji" title="Segoe UI Emoji" style="font-family: &quot;Segoe UI Emoji&quot;, sans-serif, simhei;">Segoe UI Emoji</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI Historic" data-type="Segoe UI Historic" title="Segoe UI Historic" style="font-family: &quot;Segoe UI Historic&quot;, sans-serif, simhei;">Segoe UI Historic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI Symbol" data-type="Segoe UI Symbol" title="Segoe UI Symbol" style="font-family: &quot;Segoe UI Symbol&quot;, sans-serif, simhei;">Segoe UI Symbol</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="SimSun" data-type="SimSun" title="SimSun" style="font-family: SimSun, sans-serif, simhei;">SimSun</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="SimSun-ExtB" data-type="SimSun-ExtB" title="SimSun-ExtB" style="font-family: SimSun-ExtB, sans-serif, simhei;">SimSun-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Banner" data-type="Sitka Banner" title="Sitka Banner" style="font-family: &quot;Sitka Banner&quot;, sans-serif, simhei;">Sitka Banner</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Display" data-type="Sitka Display" title="Sitka Display" style="font-family: &quot;Sitka Display&quot;, sans-serif, simhei;">Sitka Display</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Heading" data-type="Sitka Heading" title="Sitka Heading" style="font-family: &quot;Sitka Heading&quot;, sans-serif, simhei;">Sitka Heading</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Small" data-type="Sitka Small" title="Sitka Small" style="font-family: &quot;Sitka Small&quot;, sans-serif, simhei;">Sitka Small</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Subheading" data-type="Sitka Subheading" title="Sitka Subheading" style="font-family: &quot;Sitka Subheading&quot;, sans-serif, simhei;">Sitka Subheading</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Text" data-type="Sitka Text" title="Sitka Text" style="font-family: &quot;Sitka Text&quot;, sans-serif, simhei;">Sitka Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sylfaen" data-type="Sylfaen" title="Sylfaen" style="font-family: Sylfaen, sans-serif, simhei;">Sylfaen</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Symbol" data-type="Symbol" title="Symbol" style="font-family: Symbol, sans-serif, simhei;">Symbol</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Tahoma" data-type="Tahoma" title="Tahoma" style="font-family: Tahoma, sans-serif, simhei;">Tahoma</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Times New Roman" data-type="Times New Roman" title="Times New Roman" style="font-family: &quot;Times New Roman&quot;, sans-serif, simhei;">Times New Roman</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Trebuchet MS" data-type="Trebuchet MS" title="Trebuchet MS" style="font-family: &quot;Trebuchet MS&quot;, sans-serif, simhei;">Trebuchet MS</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Verdana" data-type="Verdana" title="Verdana" style="font-family: Verdana, sans-serif, simhei;">Verdana</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Webdings" data-type="Webdings" title="Webdings" style="font-family: Webdings, sans-serif, simhei;">Webdings</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Wingdings" data-type="Wingdings" title="Wingdings" style="font-family: Wingdings, sans-serif, simhei;">Wingdings</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Yu Gothic" data-type="Yu Gothic" title="Yu Gothic" style="font-family: &quot;Yu Gothic&quot;, sans-serif, simhei;">Yu Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Yu Gothic UI" data-type="Yu Gothic UI" title="Yu Gothic UI" style="font-family: &quot;Yu Gothic UI&quot;, sans-serif, simhei;">Yu Gothic UI</li>
+</ul>
+</span>
+<span class="npe_text_tool npe_text_font_size" data-clickcode="PTE_G_FONTSIZE">
+<span class="npe_tool_title" title="글자 크기">크기 5</span>
+<ul class="npe_tool_list npe_text_font_size_list _sizes _sizes-list" id="">
+<script type="text/tw-template"></script><li class="npe_tool_item _item-attr _item _new" title="200px" data-type="200" data-title="200px"><span class="_item-text">200</span>px</li><li class="npe_tool_item _item-attr _item _new" title="160px" data-type="160" data-title="160px"><span class="_item-text">160</span>px</li><li class="npe_tool_item _item-attr _item _new" title="120px" data-type="120" data-title="120px"><span class="_item-text">120</span>px</li><li class="npe_tool_item _item-attr _item _new" title="80px" data-type="80" data-title="80px"><span class="_item-text">80</span>px</li><li class="npe_tool_item _item-attr _item _new" title="40px" data-type="40" data-title="40px"><span class="_item-text">40</span>px</li><li class="npe_tool_item _item-attr _item _new" title="34px" data-type="34" data-title="34px"><span class="_item-text">34</span>px</li><li class="npe_tool_item _item-attr _item _new" title="28px" data-type="28" data-title="28px"><span class="_item-text">28</span>px</li><li class="npe_tool_item _item-attr _item _new" title="19px" data-type="19" data-title="19px"><span class="_item-text">19</span>px</li><li class="npe_tool_item _item-attr _item _new" title="16px" data-type="16" data-title="16px"><span class="_item-text">16</span>px</li><li class="npe_tool_item _item-attr _item _new" title="14px" data-type="14" data-title="14px"><span class="_item-text">14</span>px</li><li class="npe_tool_item _item-attr _item _new" title="11px" data-type="11" data-title="11px"><span class="_item-text">11</span>px</li><li class="npe_tool_item _item-attr _item _new" title="10px" data-type="10" data-title="10px"><span class="_item-text">10</span>px</li>
+</ul>
+</span>
+<button type="button" class="npe_text_tool npe_text_font_bold" title="굵게" data-clickcode="PTE_G_BOLD">
+<span class="npe_tool_title"></span>
+</button>
+<button type="button" class="npe_text_tool npe_text_font_italic" title="기울임꼴" data-clickcode="PTE_G_ITALIC">
+<span class="npe_tool_title"></span>
+</button>
+<span class="npe_text_tool npe_text_font_color" title="글자색" data-clickcode="PTE_G_COLOR">
+<span class="npe_tool_title"></span>
+<span class="npe_text_color_preview" style="background-color: rgb(255, 255, 255);"></span>
+</span>
+<span class="npe_text_tool npe_text_back_color" title="배경색" data-clickcode="PTE_G_BGCOLOR">
+<span class="npe_tool_title"></span>
+<span class="npe_text_color_preview" style="background-color: #000;"></span>
+</span>
+<div class="npe_color_select_area">
+<div class="npe_color_select_recent">
+<div class="npe_color_select_list _recentColors _recentColors-list" id="">
+<script type="text/tw-template"></script>
+</div>
+</div>
+<div class="npe_color_select_table">
+<div class="npe_color_select_list _colors _colors-list">
+<script type="text/tw-template"></script>
+</div>
+</div>
+<div class="npe_color_select_input">
+<span class="npe_color_select_preview" style="background-color:#f7f7f7"></span>
+<span class="npe_color_select_code">
+<span class="npe_color_select_code_prefix">#</span>
+<input type="text" class="npe_color_select_code_input" maxlength="6" style="text-transform: uppercase; ime-mode:disabled;">
+</span>
+<div class="npe_color_select_opacity_area">
+<span class="npe_color_select_opacity_title _txt_signature_opacity-text">투명도</span>
+<div class="npe_color_select_opacity_slide npe_slide_area">
+<input type="range" step="1" class="npe_slide on">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track"></div>
+<div class="npe_slide_background_thumb"></div>
+</div>
+</div>
+<input type="text" class="npe_color_select_opacity_num" maxlength="3" size="3">
+<span class="npe_color_select_opacity_num_control">
+<button type="button" class="npe_num_up"></button>
+<button type="button" class="npe_num_down"></button>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="npe_control_detail npe_control_mosaic" data-control="mosaic">
+<strong class="npe_blind">모자이크</strong>
+<!-- <div class="npe_control_mosaic_tooltip">
+Shift 키를 누르면<br>이미지를 드래그할 수 있어요
+</div> -->
+<button type="button" class="npe_btn_icon npe_btn_detail_mosaic rect on" data-mosaic="square">
+<span class="npe_btn_title"><span class="_txt_square-text">사각</span></span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_mosaic circle" data-mosaic="circle">
+<span class="npe_btn_title"><span class="_txt_circle-text">원</span></span>
+</button>
+<button type="button" class="npe_btn_icon npe_btn_detail_mosaic auto" data-mosaic="auto">
+<span class="npe_btn_title"><span>자동인식</span></span>
+</button>
+<div class="npe_control_detail_slide_area npe_slide_area">
+<input type="range" min="1" max="6" step="1" data-base="0" data-basedata="1" data-mindata="1" data-maxdata="6" class="npe_slide npe_slide_mosaic on" style="height: 19px;">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track" style="width: 60%;"></div>
+<div class="npe_slide_background_thumb" style="left: 60%;"></div>
+<span class="npe_control_detail_slide_number npe_slide_number" style="left: 60%;">4</span>
+</div>
+</div>
+</div>
+<div class="npe_control_detail npe_control_text" data-control="text">
+<strong class="npe_blind">텍스트</strong>
+<button type="button" class="npe_btn_icon npe_btn_text_add">
+<span class="npe_btn_title _txt_add_text-text">텍스트 추가</span>
+</button>
+<div class="npe_control_text_option_area">
+<div class="npe_text_tool_area">
+<span class="npe_text_tool npe_text_font_family" data-clickcode="PTE_T_FONT">
+<span class="npe_tool_title" title="글꼴">나눔고딕</span>
+<ul class="npe_tool_list npe_text_font_family_list _fonts _fonts-list" id="">
+<script type="text/tw-template"></script><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_default-text" data-title="기본서체" data-type="default" title="기본서체" data-default="true" style="font-family: &quot;malgun gothic&quot;, &quot;맑은 고딕&quot;, &quot;Helvetica Neue&quot;, helvetica, AppleSDGothicNeo-Regular, sans-serif, simhei;">기본서체</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_nanumgothic-text" data-title="나눔고딕" data-type="nanumgothic" title="나눔고딕" style="font-family: 나눔고딕, nanumgothic, se_NanumGothic, AppleSDGothicNeo-Regular, sans-serif, simhei;">나눔고딕</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_nanummyeongjo-text" data-title="나눔명조" data-type="nanummyeongjo" title="나눔명조" style="font-family: 나눔명조, nanummyeongjo, se_NanumMyeongjo, serif, simsun;">나눔명조</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new _txt_font_nanumbarungothic-text" data-title="바른고딕" data-type="nanumbarungothic" title="바른고딕" style="font-family: 나눔바른고딕, nanumbarungothic, se_NanumBarunGothic, AppleSDGothicNeo-Regular, sans-serif, simhei;">바른고딕</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Abel" data-type="Abel" title="Abel" style="font-family: Abel, sans-serif;">Abel</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Arvo" data-type="Arvo" title="Arvo" style="font-family: Arvo, serif;">Arvo</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Bungee Shade" data-type="Bungee Shade" title="Bungee Shade" style="font-family: &quot;Bungee Shade&quot;, cursive;">Bungee Shade</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Cookie" data-type="Cookie" title="Cookie" style="font-family: Cookie, cursive;">Cookie</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Crimson Text" data-type="Crimson Text" title="Crimson Text" style="font-family: &quot;Crimson Text&quot;, serif;">Crimson Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Dancing Script" data-type="Dancing Script" title="Dancing Script" style="font-family: &quot;Dancing Script&quot;, cursive;">Dancing Script</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Dosis" data-type="Dosis" title="Dosis" style="font-family: Dosis, sans-serif;">Dosis</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Duru Sans" data-type="Duru Sans" title="Duru Sans" style="font-family: &quot;Duru Sans&quot;, sans-serif;">Duru Sans</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Inconsolata" data-type="Inconsolata" title="Inconsolata" style="font-family: Inconsolata, monospace;">Inconsolata</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Kreon" data-type="Kreon" title="Kreon" style="font-family: Kreon, serif;">Kreon</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lancelot" data-type="Lancelot" title="Lancelot" style="font-family: Lancelot, cursive;">Lancelot</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lobster" data-type="Lobster" title="Lobster" style="font-family: Lobster, cursive;">Lobster</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Mandali" data-type="Mandali" title="Mandali" style="font-family: Mandali, sans-serif;">Mandali</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Noto Sans" data-type="Noto Sans" title="Noto Sans" style="font-family: &quot;Noto Sans&quot;, sans-serif;">Noto Sans</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Noto Serif" data-type="Noto Serif" title="Noto Serif" style="font-family: &quot;Noto Serif&quot;, serif;">Noto Serif</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Podkova" data-type="Podkova" title="Podkova" style="font-family: Podkova, serif;">Podkova</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Quicksand" data-type="Quicksand" title="Quicksand" style="font-family: Quicksand, sans-serif;">Quicksand</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Rasa" data-type="Rasa" title="Rasa" style="font-family: Rasa, serif;">Rasa</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sanchez" data-type="Sanchez" title="Sanchez" style="font-family: Sanchez, &quot;serif &quot;;">Sanchez</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Arial" data-type="Arial" title="Arial" style="font-family: Arial, sans-serif, simhei;">Arial</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Arial Black" data-type="Arial Black" title="Arial Black" style="font-family: &quot;Arial Black&quot;, sans-serif, simhei;">Arial Black</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Batang" data-type="Batang" title="Batang" style="font-family: Batang, sans-serif, simhei;">Batang</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="BatangChe" data-type="BatangChe" title="BatangChe" style="font-family: BatangChe, sans-serif, simhei;">BatangChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Book Antiqua" data-type="Book Antiqua" title="Book Antiqua" style="font-family: &quot;Book Antiqua&quot;, sans-serif, simhei;">Book Antiqua</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Calibri" data-type="Calibri" title="Calibri" style="font-family: Calibri, sans-serif, simhei;">Calibri</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Calibri Light" data-type="Calibri Light" title="Calibri Light" style="font-family: &quot;Calibri Light&quot;, sans-serif, simhei;">Calibri Light</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Calisto MT" data-type="Calisto MT" title="Calisto MT" style="font-family: &quot;Calisto MT&quot;, sans-serif, simhei;">Calisto MT</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Cambria" data-type="Cambria" title="Cambria" style="font-family: Cambria, sans-serif, simhei;">Cambria</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Cambria Math" data-type="Cambria Math" title="Cambria Math" style="font-family: &quot;Cambria Math&quot;, sans-serif, simhei;">Cambria Math</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Candara" data-type="Candara" title="Candara" style="font-family: Candara, sans-serif, simhei;">Candara</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Century Gothic" data-type="Century Gothic" title="Century Gothic" style="font-family: &quot;Century Gothic&quot;, sans-serif, simhei;">Century Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Comic Sans MS" data-type="Comic Sans MS" title="Comic Sans MS" style="font-family: &quot;Comic Sans MS&quot;, sans-serif, simhei;">Comic Sans MS</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Consolas" data-type="Consolas" title="Consolas" style="font-family: Consolas, sans-serif, simhei;">Consolas</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Constantia" data-type="Constantia" title="Constantia" style="font-family: Constantia, sans-serif, simhei;">Constantia</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Copperplate Gothic" data-type="Copperplate Gothic" title="Copperplate Gothic" style="font-family: &quot;Copperplate Gothic&quot;, sans-serif, simhei;">Copperplate Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Copperplate Gothic Light" data-type="Copperplate Gothic Light" title="Copperplate Gothic Light" style="font-family: &quot;Copperplate Gothic Light&quot;, sans-serif, simhei;">Copperplate Gothic Light</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Corbel" data-type="Corbel" title="Corbel" style="font-family: Corbel, sans-serif, simhei;">Corbel</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Courier New" data-type="Courier New" title="Courier New" style="font-family: &quot;Courier New&quot;, sans-serif, simhei;">Courier New</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Dotum" data-type="Dotum" title="Dotum" style="font-family: Dotum, sans-serif, simhei;">Dotum</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="DotumChe" data-type="DotumChe" title="DotumChe" style="font-family: DotumChe, sans-serif, simhei;">DotumChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Ebrima" data-type="Ebrima" title="Ebrima" style="font-family: Ebrima, sans-serif, simhei;">Ebrima</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Franklin Gothic Medium" data-type="Franklin Gothic Medium" title="Franklin Gothic Medium" style="font-family: &quot;Franklin Gothic Medium&quot;, sans-serif, simhei;">Franklin Gothic Medium</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gabriola" data-type="Gabriola" title="Gabriola" style="font-family: Gabriola, sans-serif, simhei;">Gabriola</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gadugi" data-type="Gadugi" title="Gadugi" style="font-family: Gadugi, sans-serif, simhei;">Gadugi</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Georgia" data-type="Georgia" title="Georgia" style="font-family: Georgia, sans-serif, simhei;">Georgia</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gulim" data-type="Gulim" title="Gulim" style="font-family: Gulim, sans-serif, simhei;">Gulim</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="GulimChe" data-type="GulimChe" title="GulimChe" style="font-family: GulimChe, sans-serif, simhei;">GulimChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Gungsuh" data-type="Gungsuh" title="Gungsuh" style="font-family: Gungsuh, sans-serif, simhei;">Gungsuh</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="GungsuhChe" data-type="GungsuhChe" title="GungsuhChe" style="font-family: GungsuhChe, sans-serif, simhei;">GungsuhChe</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Impact" data-type="Impact" title="Impact" style="font-family: Impact, sans-serif, simhei;">Impact</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Javanese Text" data-type="Javanese Text" title="Javanese Text" style="font-family: &quot;Javanese Text&quot;, sans-serif, simhei;">Javanese Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Leelawadee" data-type="Leelawadee" title="Leelawadee" style="font-family: Leelawadee, sans-serif, simhei;">Leelawadee</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Leelawadee UI" data-type="Leelawadee UI" title="Leelawadee UI" style="font-family: &quot;Leelawadee UI&quot;, sans-serif, simhei;">Leelawadee UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lucida Console" data-type="Lucida Console" title="Lucida Console" style="font-family: &quot;Lucida Console&quot;, sans-serif, simhei;">Lucida Console</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Lucida Sans Unicode" data-type="Lucida Sans Unicode" title="Lucida Sans Unicode" style="font-family: &quot;Lucida Sans Unicode&quot;, sans-serif, simhei;">Lucida Sans Unicode</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Malgun Gothic" data-type="Malgun Gothic" title="Malgun Gothic" style="font-family: &quot;Malgun Gothic&quot;, sans-serif, simhei;">Malgun Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Marlett" data-type="Marlett" title="Marlett" style="font-family: Marlett, sans-serif, simhei;">Marlett</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Himalaya" data-type="Microsoft Himalaya" title="Microsoft Himalaya" style="font-family: &quot;Microsoft Himalaya&quot;, sans-serif, simhei;">Microsoft Himalaya</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft JhengHei" data-type="Microsoft JhengHei" title="Microsoft JhengHei" style="font-family: &quot;Microsoft JhengHei&quot;, sans-serif, simhei;">Microsoft JhengHei</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft JhengHei UI" data-type="Microsoft JhengHei UI" title="Microsoft JhengHei UI" style="font-family: &quot;Microsoft JhengHei UI&quot;, sans-serif, simhei;">Microsoft JhengHei UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft New Tai Lue" data-type="Microsoft New Tai Lue" title="Microsoft New Tai Lue" style="font-family: &quot;Microsoft New Tai Lue&quot;, sans-serif, simhei;">Microsoft New Tai Lue</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft PhagsPa" data-type="Microsoft PhagsPa" title="Microsoft PhagsPa" style="font-family: &quot;Microsoft PhagsPa&quot;, sans-serif, simhei;">Microsoft PhagsPa</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Sans Serif" data-type="Microsoft Sans Serif" title="Microsoft Sans Serif" style="font-family: &quot;Microsoft Sans Serif&quot;, sans-serif, simhei;">Microsoft Sans Serif</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Tai Le" data-type="Microsoft Tai Le" title="Microsoft Tai Le" style="font-family: &quot;Microsoft Tai Le&quot;, sans-serif, simhei;">Microsoft Tai Le</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Uighur" data-type="Microsoft Uighur" title="Microsoft Uighur" style="font-family: &quot;Microsoft Uighur&quot;, sans-serif, simhei;">Microsoft Uighur</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft YaHei" data-type="Microsoft YaHei" title="Microsoft YaHei" style="font-family: &quot;Microsoft YaHei&quot;, sans-serif, simhei;">Microsoft YaHei</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft YaHei UI" data-type="Microsoft YaHei UI" title="Microsoft YaHei UI" style="font-family: &quot;Microsoft YaHei UI&quot;, sans-serif, simhei;">Microsoft YaHei UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Microsoft Yi Baiti" data-type="Microsoft Yi Baiti" title="Microsoft Yi Baiti" style="font-family: &quot;Microsoft Yi Baiti&quot;, sans-serif, simhei;">Microsoft Yi Baiti</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MingLiU-ExtB" data-type="MingLiU-ExtB" title="MingLiU-ExtB" style="font-family: MingLiU-ExtB, sans-serif, simhei;">MingLiU-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="PMingLiU-ExtB" data-type="PMingLiU-ExtB" title="PMingLiU-ExtB" style="font-family: PMingLiU-ExtB, sans-serif, simhei;">PMingLiU-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MingLiU_HKSCS-ExtB" data-type="MingLiU_HKSCS-ExtB" title="MingLiU_HKSCS-ExtB" style="font-family: MingLiU_HKSCS-ExtB, sans-serif, simhei;">MingLiU_HKSCS-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Mongolian Baiti" data-type="Mongolian Baiti" title="Mongolian Baiti" style="font-family: &quot;Mongolian Baiti&quot;, sans-serif, simhei;">Mongolian Baiti</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MS Gothic" data-type="MS Gothic" title="MS Gothic" style="font-family: &quot;MS Gothic&quot;, sans-serif, simhei;">MS Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MS PGothic" data-type="MS PGothic" title="MS PGothic" style="font-family: &quot;MS PGothic&quot;, sans-serif, simhei;">MS PGothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MS UI Gothic" data-type="MS UI Gothic" title="MS UI Gothic" style="font-family: &quot;MS UI Gothic&quot;, sans-serif, simhei;">MS UI Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="MV Boli" data-type="MV Boli" title="MV Boli" style="font-family: &quot;MV Boli&quot;, sans-serif, simhei;">MV Boli</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Myanmar Text" data-type="Myanmar Text" title="Myanmar Text" style="font-family: &quot;Myanmar Text&quot;, sans-serif, simhei;">Myanmar Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Nirmala UI" data-type="Nirmala UI" title="Nirmala UI" style="font-family: &quot;Nirmala UI&quot;, sans-serif, simhei;">Nirmala UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="NSimSun" data-type="NSimSun" title="NSimSun" style="font-family: NSimSun, sans-serif, simhei;">NSimSun</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Palatino Linotype" data-type="Palatino Linotype" title="Palatino Linotype" style="font-family: &quot;Palatino Linotype&quot;, sans-serif, simhei;">Palatino Linotype</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe MDL2 Assets" data-type="Segoe MDL2 Assets" title="Segoe MDL2 Assets" style="font-family: &quot;Segoe MDL2 Assets&quot;, sans-serif, simhei;">Segoe MDL2 Assets</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe Print" data-type="Segoe Print" title="Segoe Print" style="font-family: &quot;Segoe Print&quot;, sans-serif, simhei;">Segoe Print</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe Script" data-type="Segoe Script" title="Segoe Script" style="font-family: &quot;Segoe Script&quot;, sans-serif, simhei;">Segoe Script</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI" data-type="Segoe UI" title="Segoe UI" style="font-family: &quot;Segoe UI&quot;, sans-serif, simhei;">Segoe UI</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI Emoji" data-type="Segoe UI Emoji" title="Segoe UI Emoji" style="font-family: &quot;Segoe UI Emoji&quot;, sans-serif, simhei;">Segoe UI Emoji</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI Historic" data-type="Segoe UI Historic" title="Segoe UI Historic" style="font-family: &quot;Segoe UI Historic&quot;, sans-serif, simhei;">Segoe UI Historic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Segoe UI Symbol" data-type="Segoe UI Symbol" title="Segoe UI Symbol" style="font-family: &quot;Segoe UI Symbol&quot;, sans-serif, simhei;">Segoe UI Symbol</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="SimSun" data-type="SimSun" title="SimSun" style="font-family: SimSun, sans-serif, simhei;">SimSun</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="SimSun-ExtB" data-type="SimSun-ExtB" title="SimSun-ExtB" style="font-family: SimSun-ExtB, sans-serif, simhei;">SimSun-ExtB</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Banner" data-type="Sitka Banner" title="Sitka Banner" style="font-family: &quot;Sitka Banner&quot;, sans-serif, simhei;">Sitka Banner</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Display" data-type="Sitka Display" title="Sitka Display" style="font-family: &quot;Sitka Display&quot;, sans-serif, simhei;">Sitka Display</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Heading" data-type="Sitka Heading" title="Sitka Heading" style="font-family: &quot;Sitka Heading&quot;, sans-serif, simhei;">Sitka Heading</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Small" data-type="Sitka Small" title="Sitka Small" style="font-family: &quot;Sitka Small&quot;, sans-serif, simhei;">Sitka Small</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Subheading" data-type="Sitka Subheading" title="Sitka Subheading" style="font-family: &quot;Sitka Subheading&quot;, sans-serif, simhei;">Sitka Subheading</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sitka Text" data-type="Sitka Text" title="Sitka Text" style="font-family: &quot;Sitka Text&quot;, sans-serif, simhei;">Sitka Text</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Sylfaen" data-type="Sylfaen" title="Sylfaen" style="font-family: Sylfaen, sans-serif, simhei;">Sylfaen</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Symbol" data-type="Symbol" title="Symbol" style="font-family: Symbol, sans-serif, simhei;">Symbol</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Tahoma" data-type="Tahoma" title="Tahoma" style="font-family: Tahoma, sans-serif, simhei;">Tahoma</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Times New Roman" data-type="Times New Roman" title="Times New Roman" style="font-family: &quot;Times New Roman&quot;, sans-serif, simhei;">Times New Roman</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Trebuchet MS" data-type="Trebuchet MS" title="Trebuchet MS" style="font-family: &quot;Trebuchet MS&quot;, sans-serif, simhei;">Trebuchet MS</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Verdana" data-type="Verdana" title="Verdana" style="font-family: Verdana, sans-serif, simhei;">Verdana</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Webdings" data-type="Webdings" title="Webdings" style="font-family: Webdings, sans-serif, simhei;">Webdings</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Wingdings" data-type="Wingdings" title="Wingdings" style="font-family: Wingdings, sans-serif, simhei;">Wingdings</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Yu Gothic" data-type="Yu Gothic" title="Yu Gothic" style="font-family: &quot;Yu Gothic&quot;, sans-serif, simhei;">Yu Gothic</li><li class="npe_tool_item _type-data _fontFamily-fontFamily _title-text _title-title _title-data _default-data _i18nClass-addClass _item _new" data-title="Yu Gothic UI" data-type="Yu Gothic UI" title="Yu Gothic UI" style="font-family: &quot;Yu Gothic UI&quot;, sans-serif, simhei;">Yu Gothic UI</li>
+</ul>
+</span>
+<span class="npe_text_tool npe_text_font_size" data-clickcode="PTE_T_FONTSIZE">
+<span class="npe_tool_title" title="글자 크기">크기 5</span>
+<ul class="npe_tool_list npe_text_font_size_list _sizes _sizes-list" id="">
+<script type="text/tw-template"></script><li class="npe_tool_item _item-attr _item _new" title="200px" data-type="200" data-title="200px"><span class="_item-text">200</span>px</li><li class="npe_tool_item _item-attr _item _new" title="160px" data-type="160" data-title="160px"><span class="_item-text">160</span>px</li><li class="npe_tool_item _item-attr _item _new" title="120px" data-type="120" data-title="120px"><span class="_item-text">120</span>px</li><li class="npe_tool_item _item-attr _item _new" title="80px" data-type="80" data-title="80px"><span class="_item-text">80</span>px</li><li class="npe_tool_item _item-attr _item _new" title="40px" data-type="40" data-title="40px"><span class="_item-text">40</span>px</li><li class="npe_tool_item _item-attr _item _new" title="34px" data-type="34" data-title="34px"><span class="_item-text">34</span>px</li><li class="npe_tool_item _item-attr _item _new" title="28px" data-type="28" data-title="28px"><span class="_item-text">28</span>px</li><li class="npe_tool_item _item-attr _item _new" title="19px" data-type="19" data-title="19px"><span class="_item-text">19</span>px</li><li class="npe_tool_item _item-attr _item _new" title="16px" data-type="16" data-title="16px"><span class="_item-text">16</span>px</li><li class="npe_tool_item _item-attr _item _new" title="14px" data-type="14" data-title="14px"><span class="_item-text">14</span>px</li><li class="npe_tool_item _item-attr _item _new" title="11px" data-type="11" data-title="11px"><span class="_item-text">11</span>px</li><li class="npe_tool_item _item-attr _item _new" title="10px" data-type="10" data-title="10px"><span class="_item-text">10</span>px</li>
+</ul>
+</span>
+<button type="button" class="npe_text_tool npe_text_font_bold" title="굵게" data-clickcode="PTE_T_BOLD">
+<span class="npe_tool_title"></span>
+</button>
+<button type="button" class="npe_text_tool npe_text_font_italic" title="기울임꼴" data-clickcode="PTE_T_ITALIC">
+<span class="npe_tool_title"></span>
+</button>
+<span class="npe_text_tool npe_text_font_color" title="글자색" data-clickcode="PTE_T_COLOR">
+<span class="npe_tool_title"></span>
+<span class="npe_text_color_preview" style="background-color: rgb(255, 255, 255);"></span>
+</span>
+<span class="npe_text_tool npe_text_back_color" title="배경색" data-clickcode="PTE_T_BGCOLOR">
+<span class="npe_tool_title"></span>
+<span class="npe_text_color_preview" style="background-color: #000;"></span>
+</span>
+<div class="npe_color_select_area">
+<div class="npe_color_select_recent">
+<div class="npe_color_select_list _recentColors _recentColors-list" id="">
+<script type="text/tw-template"></script>
+</div>
+</div>
+<div class="npe_color_select_table">
+<div class="npe_color_select_list _colors _colors-list">
+<script type="text/tw-template"></script>
+</div>
+</div>
+<div class="npe_color_select_input">
+<span class="npe_color_select_preview" style="background-color:#f7f7f7"></span>
+<span class="npe_color_select_code">
+<span class="npe_color_select_code_prefix">#</span>
+<input type="text" class="npe_color_select_code_input" maxlength="6" style="text-transform: uppercase; ime-mode:disabled;">
+</span>
+<div class="npe_color_select_opacity_area">
+<span class="npe_color_select_opacity_title _txt_signature_opacity-text">투명도</span>
+<div class="npe_color_select_opacity_slide npe_slide_area">
+<input type="range" step="1" class="npe_slide on">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track"></div>
+<div class="npe_slide_background_thumb"></div>
+</div>
+</div>
+<input type="text" class="npe_color_select_opacity_num" maxlength="3" size="3">
+<span class="npe_color_select_opacity_num_control">
+<button type="button" class="npe_num_up"></button>
+<button type="button" class="npe_num_down"></button>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="npe_control_detail npe_control_sticker" data-control="sticker">
+<strong class="npe_blind">스티커</strong>
+<div class="npe_sticker_area">
+<div class="npe_sticker_list _stickerPacks _stickerPacks-list">
+<script type="text/tw-template"></script>
+<div class="npe_sticker_item _grafolioMarketBtnWrap" style="display: none;">
+<button type="button" class="npe_btn_detail_sticker _grafolioMarketBtn">
+<i class="npe_icon_plus"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="npe_control_detail npe_control_mask _masks _masks-list" data-control="clip">
+<strong class="npe_blind">마스크</strong>
+<button type="button" class="npe_btn_icon npe_btn_detail_mask no_apply _mask_btn" data-code="-1">
+<span class="npe_btn_title"><span class="_txt_none_apply-text">적용 안함</span></span>
+</button>
+<span class="npe_detail_bar"></span>
+<script type="text/tw-template"></script><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new oval" data-code="0">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_oval-text">원</span></span>
+</button><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new triangle" data-code="1">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_triangle-text">원</span></span>
+</button><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new round_square" data-code="2">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_round_square-text">원</span></span>
+</button><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new polygon" data-code="3">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_polygon-text">원</span></span>
+</button><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new star1" data-code="4">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_star1-text">원</span></span>
+</button><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new star2" data-code="5">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_star2-text">원</span></span>
+</button><button type="button" class="npe_btn_icon npe_btn_detail_mask _mask_btn _code-data _className-addClass _item _new round_star" data-code="6">
+<span class="npe_btn_title"><span class="_i18n-addI18nTextClass _txt_mask_round_star-text">원</span></span>
+</button>
+<span class="npe_detail_bar"></span>
+<span role="button" class="npe_btn_icon npe_btn_detail_mask _mask_outline_btn outline">
+<span class="npe_btn_title"><span class="_txt_outline-text">테두리</span></span>
+<div class="npe_color_select_area">
+<div class="npe_color_select_border_area">
+<span class="npe_color_select_border_title">두께</span>
+<div class="npe_color_select_border_slide npe_slide_area">
+<input type="range" step="1" class="npe_slide on" min="0" max="30">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track" style="left: 50%; width: 50%;"></div>
+<div class="npe_slide_background_thumb" style="left: 100%;"></div>
+</div>
+</div>
+<input type="text" class="npe_color_select_opacity_num" maxlength="3" size="3">
+<span class="npe_color_select_opacity_num_control">
+<button class="npe_num_up"></button>
+<button class="npe_num_down"></button>
+</span>
+</div>
+<div class="npe_color_select_recent">
+<div class="npe_color_select_list _recentColors _recentColors-list" id="">
+<script type="text/tw-template"></script>
+</div>
+</div>
+<div class="npe_color_select_table">
+<div class="npe_color_select_list _colors _colors-list">
+<script type="text/tw-template"></script>
+</div>
+</div>
+<div class="npe_color_select_input">
+<span class="npe_color_select_preview" style="background-color:#f7f7f7"></span>
+<span class="npe_color_select_code">
+<span class="npe_color_select_code_prefix">#</span>
+<input type="text" class="npe_color_select_code_input" maxlength="6" style="text-transform: uppercase; ime-mode:disabled;">
+</span>
+<div class="npe_color_select_opacity_area">
+<span class="npe_color_select_opacity_title _txt_signature_opacity-text">투명도</span>
+<div class="npe_color_select_opacity_slide npe_slide_area">
+<input type="range" step="1" class="npe_slide on">
+<div class="npe_slide_appear">
+<div class="npe_slide_background_track_back"></div>
+<div class="npe_slide_background_track"></div>
+<div class="npe_slide_background_thumb"></div>
+</div>
+</div>
+<input type="text" class="npe_color_select_opacity_num" maxlength="3" size="3">
+<span class="npe_color_select_opacity_num_control">
+<button class="npe_num_up"></button>
+<button class="npe_num_down"></button>
+</span>
+</div>
+</div>
+</div></span>
+
+<span class="npe_detail_bar"></span>
+<button type="button" class="npe_btn_icon npe_btn_confirm">
+<span class="npe_btn_title _txt_confirm-text">확인</span>
+</button>
+</div>
+</div>
+</section>
+<footer class="npe_image_list_wrap">
+<label class="npe_view_set"><input type="checkbox" class="npe_view_set_check npe_blind"><i class="npe_icon_check"></i><span class="npe_view_set_title _txt_fill_the_screen-text">화면 맞춤</span></label>
+<div class="npe_image_list_area">
+<div class="npe_image_list_header">
+<div class="npe_image_list_header_title">
+<span class="list_title _txt_image_list-text">이미지 목록</span><span class="list_num _total-show" style="display:none"><em class="now_num _now-text">6</em><span class="total_num"> / <em class="_total-text">14</em></span></span>
+<div class="npe_image_list_header_btn_area">
+<button type="button" class="npe_btn_edit_order _txt_edit_order-text">순서 편집</button>
+<button type="button" class="npe_btn_sort_reverse _txt_reverse-text">역순으로</button>
+<span class="npe_image_list_header_bar"></span>
+<span class="list_open_close list_open on"><em class="list_open_close_title _txt_open-text">열기</em></span>
+<span class="list_open_close list_close"><em class="list_open_close_title _txt_close-text">닫기</em></span>
+</div>
+</div>
+</div>
+<div class="npe_image_list_header npe_select_header">
+<div class="npe_image_list_header_title">
+<button type="button" class="npe_btn_select_all" title="전체 선택"></button>
+<span class="list_title _txt_choice_photos_apply-text">적용할 사진을 선택하세요.</span> <span class="list_num _txt_selected_count-html"><em class="now_num">6</em>장 선택함</span>
+<div class="npe_image_list_header_btn_area">
+<button type="button" class="npe_btn_image_select npe_btn_cancel">
+<span class="npe_btn_title _txt_cancel-text">취소</span>
+</button>
+<button type="button" class="npe_btn_image_select npe_btn_submit">
+<span class="npe_btn_title _txt_apply-text">적용</span>
+</button>
+</div>
+</div>
+</div>
+<div class="npe_image_list_header npe_order_header">
+<div class="npe_image_list_header_title">
+<span class="list_title _txt_drag_photos-text">사진을 끌어서 순서를 바꿔 보세요. 문서에 첨부된 사진 순서도 함께 바뀝니다.</span> <span class="list_num _txt_selected_count-html"><em class="now_num">6</em>장 선택함</span>
+<div class="npe_image_list_header_btn_area">
+<button type="button" class="npe_btn_image_select npe_btn_cancel">
+<span class="npe_btn_title _txt_cancel-text">취소</span>
+</button>
+<button type="button" class="npe_btn_image_select npe_btn_submit">
+<span class="npe_btn_title _txt_apply_edit_order-text">순서 편집 완료</span>
+</button>
+</div>
+</div>
+</div>
+<div class="npe_image_list_content">
+<button type="button" class="npe_image_list_arrow npe_image_list_prev"><span class="npe_blind">이전</span></button>
+<ul class="npe_image_list _list _list-list j-selectable">
+<li class="npe_image_list_item _template _key-attr _isReady-_setLoadingClass" data-key="#key#" draggable="true">
+<div class="npe_image_list_thumb_wrap">
+<span class="npe_image_list_thumb" href="#">
+<span class="npe_image_list_thumb_img _thumbnailSrc-background"></span>
+</span>
+</div>
+<i class="npe_image_item_checked"></i>
+</li>
+</ul>
+<button type="button" class="npe_image_list_arrow npe_image_list_next"><span class="npe_blind">다음</span></button>
+</div>
+<div class="npe_image_list_tooltip _txt_editor_sort_tooltip-html">
+끌어서 이미지 순서를 변경할 수 있어요. 변경시 에디터에 첨부된 이미지 순서도 함께 변경됩니다.
+</div>
+</div>
+</footer>
+<div class="npe_canvas_loading"></div>
+<div class="npe_notice_tooltip">
+<i class="npe_icon_tooltip_hand"></i>
+<span class="npe_notice_tooltip_text _txt_notice_compare-html">이미지를 누르면<br>원본과 비교할 수 있어요</span>
+</div>
+<div class="npe_alert_wrap">
+<div class="npe_alert">
+<strong class="npe_alert_title _txt_alert_error-text">
+앗, 에러가 발생했습니다!
+</strong>
+<strong class="npe_alert_title_small">
+JPG, GIF, PNG, BMP 이미지 파일을 올릴 수 있습니다.
+<br>한 장당 10MB, 1회 500MB까지 올리기 가능합니다.
+</strong>
+<p class="npe_alert_description">다시 한 번 시도해 주시겠어요?</p>
+<p class="npe_alert_description npe_alert_mosaic">화질과 크기, 얼굴 방향, 그림자에 따라<br>인식결과에 차이가 있을 수 있습니다.</p>
+<p class="npe_alert_description_long">
+저작권자의 원 권리자의 허락을 받지 않은 이미지의 수정 및 사용,<br>다른 사람의 권리 침해, 명예를 훼손하는 이미지는 <br><em class="highlight">이용약관 및 관련 법률에 의해 제재를 받으실 수 있습니다.</em>
+</p>
+<div class="npe_alert_uploading_area">
+<div class="npe_alert_uploading_total">
+<div class="npe_alert_progress_bar_wrap">
+<div class="npe_alert_progress_bar _totalPercent-widthPercent"></div>
+</div>
+<span class="npe_alert_text">전체</span>
+<span class="npe_alert_num_area">
+<em class="npe_alert_num _uploadCnt-text">0</em>/<em class="npe_alert_num_total _listCnt-text">0</em>장
+</span>
+</div>
+<div class="npe_alert_uploading_part">
+<div class="npe_alert_progress_bar_wrap">
+<div class="npe_alert_progress_bar"></div>
+</div>
+<span class="npe_alert_text _currentFileName-text">IMG_8333.JPG</span>
+<span class="npe_alert_num_perent"><span class="_percent-text"></span>%</span>
+</div>
+<div class="npe_alert_uploading_error _errorResultMessage-show">
+<i class="npe_icon_info"></i><span class="npe_alert_text _errorResultMessage-text">전체 50장 중 10장을 추가하지 못했습니다.</span>
+<button type="button" class="npe_btn_alert_toggle close _errorLogs-show">
+<span class="npe_btn_alert_title _btnTxt-text">닫기</span>
+</button>
+<div class="npe_alert_detail_area _errorLogs-show">
+<ul class="npe_alert_detail_list _errorLogs _errorLogs-list">
+<li class="npe_alert_detail_item _template">
+<span class="npe_alert_detail_filename _fileName-text">IMG_파일명글자수여기까지..</span>
+<span class="npe_alert_detail_fileext _fileExt-text">JPG</span>
+<span class="npe_alert_detail_text _message-text">최대 500MB까지 사진을 추가할 수 있습니다.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="npe_alert_btn_area">
+<button type="button" class="npe_btn npe_alert_btn_cancel">
+<em class="npe_btn_title _txt_alert_cancel-text">취소</em>
+</button>
+<button type="button" class="npe_btn npe_alert_btn_ok">
+<em class="npe_btn_title _txt_alert_ok-text">확인</em>
+</button>
+</div>
+<div class="npe_alert_sns_area">
+<button type="button" class="npe_btn_sns npe_btn_facebook" data-sns="facebook">
+<div class="npe_btn_sns_img"></div>
+<span class="npe_btn_sns_title _txt_facebook-text">페이스북</span>
+</button>
+<button type="button" class="npe_btn_sns npe_btn_pholar" data-sns="pholar">
+<div class="npe_btn_sns_img"></div>
+<span class="npe_btn_sns_title _txt_pholar-text">폴라</span>
+</button>
+<button type="button" class="npe_btn_sns npe_btn_instagram" data-sns="instagram">
+<div class="npe_btn_sns_img"></div>
+<span class="npe_btn_sns_title _txt_instagram-text">인스타그램</span>
+</button>
+</div>
+<div class="npe_alert_save_area">
+<button type="button" class="npe_btn_save npe_btn_mycomputer">
+<div class="npe_btn_save_img"></div>
+<span class="npe_btn_save_title _txt_mypc-text">내 컴퓨터</span>
+</button>
+<button type="button" class="npe_btn_save npe_btn_cloud">
+<div class="npe_btn_save_img"></div>
+<span class="npe_btn_save_title _txt_navercloud-text">네이버 클라우드</span>
+</button>
+</div>
+<button type="button" class="npe_alert_btn_close"></button>
+<label class="npe_alert_btn_hide">
+<input type="checkbox" class="npe_alert_hide_check npe_blind">
+<i class="npe_check_icon"></i>
+<span class="npe_btn_title _txt_dont_see_again-text">다시 보지 않기</span>
+</label>
+<div class="npe_alert_loading"></div>
+</div>
+</div>
+</div><div class="pop_uploadStatus __se_upload_status_bar">
+    <div class="dim_uploadStatus"></div>
+    <div class="__se_uploadStatusBar se_uploadStatusBar">
+        <div class="se_uploadLoading"><span class="blind">업로드중</span></div>
+        <div class="se_uploadStatus_thumb"><div class="thumb_img" style=""></div></div>
+        <div class="se_uploadStatus_info">
+            <dl>
+                <dt class="se_uploadStatus_info_title __se_file_name"></dt>
+                <dd class="se_uploadStatus_info_text">
+                    <span class="se_uploadStatus_file_size __se_file_size"></span>
+                    <span class="se_uploadStatus_file_count"><em class="se_uploadStatus_file_current __se_uploaded_cnt">0</em>/<em class="se_uploadStatus_file_total __se_total_cnt">0</em>
+                    </span>
+                </dd>
+            </dl>
+            <div class="se_progress_bar __se_progress" style="width:0%;"></div>
+        </div>
+    </div>
+</div></body></html>
