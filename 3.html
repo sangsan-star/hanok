@@ -2,25 +2,34 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Let's start in Hanok - Art -</title>
+    <title>Let's start in Hanok</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="colors.js"></script>
   </head>
   <body>
-    <h1><a href="index.html">Art</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">    
+    <h1><a href="index.html">Let's start in Hanok</a></h1>
+    <div id="grid">
     <ol>
       <li><a href="1.html">Architecture</a></li>
       <li><a href="2.html">History</a></li>
-      <li><a href="3.html">Art</a></li>
+      <li><a href="3.html" style="color:red;text-decoration:underline">Art</a></li>
       <li><a href="4.html">Design</a></li>
       <li><a href="5.html">Social culture</a></li>
       <li><a href="6.html">Science</a></li>
+      <li><a href="7.html">Philosophy</a></li>
       <li><a href="book.html">Books</a></li>
     </ol>
-      <h2>철학적인 유럽, 예술적인 한국인</h2>
-      <p style="margin-top:45px">
+    <div id="article">
+      <h2 style="margin-top:45px">철학적인 유럽, 예술적인 한국인</h2>
+      <p>
       유적으로만 판단하면, 고대 조선과 그리스가 비슷한 시기에 비슷한 시설을 개발했다.
       그리스의 하이퍼코스트가 주로 목욕물을 덥히기 위한 시설이었다면, 조선의 구들은 생활의 필수적인 요소인 난방과 취사를 동시에 해결하는 시설이었다. 두 시설의 용도와 기원이 다른 만큼 두 민족의 문화적 감각이나 태도에서도 차이도 크게 난다. 두 시설의 차이가 만드는 문화적 역사적 의미를 보자.<br>
-      <img src="dangun.jpg">
+      <!--<img src="dangun.jpg" width="500px">
       <img src="sosk.jpg" width="450px"><br><br>
+      -->
       </p><p>
 <br><br><u>첫째, 시설을 사용하고 발전시킨 주체가 다르다.</u><br><br>
 
@@ -70,5 +79,7 @@
 
 이런 특징은 전체 건축에 대한 태도에서도 나타나는데, 그들은 건축을 비례로 접근하여 건물 자체에 집중한다. 즉 건축을 개념화한다. 그러나 우리는 건축을 건물 자체가 아니라 주변과의 흐름으로 파악한다. 전자가 명사적이라고 하면, 후자는 동사적이라고 할 수 있다. 전자가 정태적이라고 하면 후자는 동태적이라고 할 수 있다. 그래서 명사를 이용한 개념화된 도구를 지향한 그리스 문화는 철학적 인간으로 결실을 맺었고, 동사를 이용한 흐름으로서의 도구에 관심이 있는 한국 문화은 예술적 인간으로 결실을 맺었다.
 </p>
+</div>
+</div>
 </body>
 </html>

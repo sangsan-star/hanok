@@ -3,19 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Let's start in Hanok</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="colors.js"></script>
   </head>
   <body>
-    <h1><a href="index.html">Social culture</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">    
+    <h1><a href="index.html">Let's start in Hanok</a></h1>
+    <div id="grid">
     <ol>
       <li><a href="1.html">Architecture</a></li>
       <li><a href="2.html">History</a></li>
       <li><a href="3.html">Art</a></li>
       <li><a href="4.html">Design</a></li>
-      <li><a href="5.html">Social culture</a></li>
+      <li><a href="5.html" style="color:red;text-decoration:underline">Social culture</a></li>
       <li><a href="6.html">Science</a></li>
-      <li><a href="book.html">Books</a></li>      
+      <li><a href="7.html">Philosophy</a></li>
+      <li><a href="book.html">Books</a></li>
     </ol>
-      <h2>한국 문화의 뿌리, 한옥</h2>
+    <div id="article">
+      <h2 style="margin-top:45px">한국 문화의 뿌리, 한옥</h2>
 
 
   <p>아주 오래전 식구가 많은 가족이 있었습니다.
@@ -87,6 +95,8 @@
 
   *  좀더 엄밀히 말하면, 한반도에는 두 가지 바닥 문화가 늘 공존해 왔습니다. 이 부분은 다시 이야기를 나누겠습니다.
 
-
-  </body>
+</p>
+</div>
+</div>
+</body>
 </html>
