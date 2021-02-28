@@ -4,12 +4,41 @@
     <meta charset="utf-8">
     <title>Let's start in Hanok</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="colors.js"></script>
+    <script>
+      function LinksSetColor(color){
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = color;
+            i = i + 1;
+        }
+      }
+      function BodySetColor(color){
+          document.querySelector('body').style.color = color;
+      }
+      function BodySetBackgroundColor(color){
+          document.querySelector('body').style.backgroundColor =color;
+      }
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+          if(self.value ==='night'){
+            BodySetBackgroundColor('black');
+            BodySetColor('white');
+            self.value ='day';
+            LinksSetColor('powderblue');
+          } else {
+            BodySetBackgroundColor('white');
+            BodySetColor('black');
+            self.value ='night';
+            LinksSetColor('blue');
+          }
+      }
+    </script>
   </head>
   <body>
-    <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">  
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
     <h1><a href="index.html">Let's start in Hanok</a></h1>
     <div id="grid">
     <ol>
@@ -23,7 +52,7 @@
       <li><a href="book.html">Books</a></li>
     </ol>
       <div id="article">
-      <h2 style="margin-top:45px">한옥 속 과학</h2>
+      <h2 style="margin-top:30px">한옥 속 과학</h2>
   ​
 한옥의 과학이라고 하기보다는 생활의 지혜라고 말하고 싶다.<br><br>
 <p>

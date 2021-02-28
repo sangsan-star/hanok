@@ -4,26 +4,47 @@
     <meta charset="utf-8">
     <title>Let's start in Hanok</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="colors.js"></script>
   </head>
   <body>
     <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">  
+      if(document.querySelector('#night_day').value ==='night'){
+        document.querySelector('body').style.backgroundColor ='black';
+        document.querySelector('body').style.color ='white';
+        document.querySelector('#night_day').value ='day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i<alist.length){
+            alist[i].style.color = 'powderblue'
+            i = i + 1;
+        }
+      } else {
+        document.querySelector('body').style.backgroundColor ='white';
+        document.querySelector('body').style.color ='black';
+        document.querySelector('#night_day').value ='night';
+        
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i<alist.length){
+            alist[i].style.color = 'blue'
+            i = i + 1;
+        }
+      }
+    ">
     <h1><a href="index.html">Let's start in Hanok</a></h1>
-  <div id="grid">
-    <ol>
-      <li><a href="1.html">Architecture</a></li>
-      <li><a href="2.html" style="color:red;text-decoration:underline">History</a></li>
-      <li><a href="3.html">Art</a></li>
-      <li><a href="4.html">Design</a></li>
-      <li><a href="5.html">Social culture</a></li>
-      <li><a href="6.html">Science</a></li>
-      <li><a href="7.html">Philosophy</a></li>
-      <li><a href="book.html">Books</a></li>
-    </ol>
-      <div id="article">
-      <h2 style="margin-top:45px">역사 속 한옥</h2>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">Architecture</a></li>
+        <li><a href="2.html" style="color:red;text-decoration:underline">History</a></li>
+        <li><a href="3.html">Art</a></li>
+        <li><a href="4.html">Design</a></li>
+        <li><a href="5.html">Social culture</a></li>
+        <li><a href="6.html">Science</a></li>
+        <li><a href="7.html">Philosophy</a></li>
+        <li><a href="book.html">Books</a></li>
+      </ol>
+        <div id="article">
+        <h2 style="margin-top:30px">역사 속 한옥</h2>
 
       한국건축은 중국건축과 다르다.
       <p>
@@ -40,7 +61,18 @@
 
 웹의 시원 : http://info.cern.ch - home of the first website
 </p>
+<input id="night_day2" type="button" value="night" onclick="
+  if(document.querySelector('#night_day2').value ==='night'){
+    document.querySelector('body').style.backgroundColor ='black';
+    document.querySelector('body').style.color ='white';
+    document.querySelector('#night_day2').value ='day'
+  } else {
+    document.querySelector('body').style.backgroundColor ='white';
+    document.querySelector('body').style.color ='black';
+    document.querySelector('#night_day2').value ='night'
+  }
+">
 </div>
-</div>
+</DIV>
 </body>
 </html>

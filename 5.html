@@ -4,12 +4,39 @@
     <meta charset="utf-8">
     <title>Let's start in Hanok</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="colors.js"></script>
+    <script>
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+          if(self.value ==='night'){
+            target.style.backgroundColor ='black';
+            target.style.color ='white';
+            self.value ='day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i<alist.length){
+                alist[i].style.color = 'powderblue'
+                i = i + 1;
+            }
+          } else {
+            target.style.backgroundColor ='white';
+            target.style.color ='black';
+            self.value ='night';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i<alist.length){
+                alist[i].style.color = 'blue'
+                i = i + 1;
+              }
+          }
+      }
+    </script>
   </head>
   <body>
-    <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">    
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
     <h1><a href="index.html">Let's start in Hanok</a></h1>
     <div id="grid">
     <ol>
@@ -23,7 +50,7 @@
       <li><a href="book.html">Books</a></li>
     </ol>
     <div id="article">
-      <h2 style="margin-top:45px">한국 문화의 뿌리, 한옥</h2>
+      <h2 style="margin-top:30px">한국 문화의 뿌리, 한옥</h2>
 
 
   <p>아주 오래전 식구가 많은 가족이 있었습니다.

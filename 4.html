@@ -4,12 +4,34 @@
     <meta charset="utf-8">
     <title>Let's start in Hanok</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="colors.js"></script>
   </head>
   <body>
-    <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">    
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+      if(this.value ==='night'){
+        target.style.backgroundColor ='black';
+        target.style.color ='white';
+        this.value ='day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i<alist.length){
+            alist[i].style.color = 'powderblue'
+            i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor ='white';
+        target.style.color ='black';
+        this.value ='night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i<alist.length){
+            alist[i].style.color = 'blue'
+            i = i + 1;
+          }
+      }
+    ">
     <h1><a href="index.html">Let's start in Hanok</a></h1>
     <div id="grid">
     <ol>
@@ -23,7 +45,7 @@
       <li><a href="book.html">Books</a></li>
     </ol>
     <div id="article">
-      <h2 style="margin-top:45px">새로운 상상, 한옥</h2>
+      <h2 style="margin-top:30px">새로운 상상, 한옥</h2>
       디자인과 예술이라는 단어가 가끔은 구별 없이 쓰이기도 합니다.
       그러나 디자인과 예술은 다릅니다.
 

@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Let's start in Hanok</title>
-    <link rel="stylesheet" href="style.css">
-    <script src ="colors.js"></script>
-  </head>
-  <body>
-    <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">  
-    <h1><a href="index.html">Let's start in Hanok</a></h1>
-    <div id="grid">
+<head>
+  <meta charset="utf-8">
+  <title>Let's start in Hanok</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    var alist = document.querySelectorAll('a');
+
+    var i = 0;
+    while(i<alist.length){
+        alist[i].style.color = 'powderblue'
+        i = i + 1;
+    }
+  ">
+  <input  type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  var alist = document.querySelectorAll('a');
+  
+  var i = 0;
+  while(i<alist.length){
+      alist[i].style.color = 'blue'
+      i = i + 1;
+  }
+  ">
+  <h1><a href="index.html">Let's start in Hanok</a></h1>
+  <div id="grid">
     <ol>
       <li><a href="1.html" style="color:red;text-decoration:underline">Architecture</a></li>
       <li><a href="2.html">History</a></li>
@@ -23,7 +41,7 @@
       <li><a href="book.html">Books</a></li>
     </ol>
     <div id="article">
-      <h2 style="margin-top:45px">건축, 한옥</h2>
+      <h2 style="margin-top:30px">건축, 한옥</h2>
       <p>
         원시 인류는 추운 겨울이 되면 움집 가운데 화덕을 만들어, 거기에 장작불을 피우고 가족이 불을 중심으로 빙 둘러앉아 오순도순 다정한 시간을 보냈습니다.
 
@@ -31,7 +49,7 @@
 
 그런데 이게 가능했을까요? 실제 움집에서 불을 피우면 천장이 다 타고 말 겁니다. 움집에서 천장이 타고나면 남는 게 쥐뿔도 없습니다. 인류는 이 문제를 해결해야 추운 겨울에 살아남을 수 있었습니다. 어떻게 하면 겨울을 안전하고 따뜻하게 날까?
 
-류는 두 가지 방법을 생각해냅니다.
+인류는 두 가지 방법을 생각해냅니다.
 </p>
 <p>
 첫 번째 방법은 전인류가 공통적으로 생각해낸 방법입니다. 천장을 뚫어서 화재를 줄이는 거죠. 청동기시대 움집을 보면 윗부분이 뚫려 있지요?
