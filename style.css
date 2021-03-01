@@ -1,6 +1,19 @@
   body {
     margin:0;
   }
+  /*
+  #active{
+    // #은 아이디 선택자를 의미한다
+    color:red;
+  }
+  .saw{
+    // .점은 class를 의미한다.
+    color:gray;
+  }
+  .active{
+    color:red;
+  }
+  */
   a {
     color:none;
     text-decoration: none;
@@ -8,22 +21,22 @@
   h1{
     font-size: 45px;
     text-align: center;
-    border-bottom:5px solid pink;
-    padding:30px;
+    border-bottom:1px solid pink;
+    padding:20px;
     margin:0;
   }
   ol {
-     border-right:5px solid pink;
-     width:150px;
+     border-right:1px solid pink;
+     width:100px;
      margin:0px;
-     padding:30px;
+     padding:20px;
   }
   #grid{
     display:grid;
     grid-template-columns: 150px 1fr;
   }
   #article{
-    padding-left:80px;
+    padding-left:25px;
   }
   @media(max-width:800px){
     #grid{
@@ -33,5 +46,5 @@
        border-right:none;
     }
     h1{
-      border-bottom:5px solid gray;
+      border-bottom:none;
     }
