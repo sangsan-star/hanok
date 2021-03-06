@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>welcome to another World</title>
+    <style>
+      input:hover{background-color:green;}
+      input:focus{background-color:cyan;}
+      input:active{font-size:20px;color:red}
+    </style>
+  </head>
+  <body>
+    <h3>파일선택 버튼과 이미지 버튼</h3>
+      <form enctype="multipart/form-data">
+        <input type="file" accept="image/*" multiple><br><br>
+        <input type="image" src="dl.jpg"
+        width="100" height="100" alt="제출버튼">
+      </form><hr>
+    <h2>파일선택 버튼과 이미지 버튼</h2>
+      <form>
+        <input type="serch" name="serch" value="검색어 입력"><hr>
+        <input type="tel" name="phone" pattern="^0\d{1,2}\-\d{3,4}\-\{4}$"
+         required title="입력형식:0??-????-????"><br/><br/>
+        <input type="submit">
+        <h3>실렉트 태그</h3>
+        <select name="subject" size="1">
+          <option value="ds">자료구조</option>
+          <option value="jaba">jaba프로그래밍</option>
+          <option value="pl">자료구조</option>
+          <option value="html"selected>HTML</option>
+          <option value="os" disabled>운영체제</option>
+          <option value="algo">알고리즘</option>
+        </select>
+        <fieldset>
+          <legend>성별</legend>
+          <label for="male">남자</label>
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="famale">여자</label>
+          <input type="radio" id="male" name="gender" value="female">
+        </fieldset>
+          <h3>실렉트 태그</h3>
+            <p>이름을 입력하세요</p>
+            <input type="text">
+      </form>
+  </body>
+</html>
