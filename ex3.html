@@ -10,3 +10,27 @@
       <input type="button" value="button" onclick="alert('Hi')">
   </body>
 </html>
+
+
+<input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  var alist = document.querySelectorAll('a');
+
+  var i = 0;
+  while(i<alist.length){
+      alist[i].style.color = 'powderblue'
+      i = i + 1;
+  }
+">
+<input  type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+var alist = document.querySelectorAll('a');
+
+var i = 0;
+while(i<alist.length){
+    alist[i].style.color = 'blue'
+    i = i + 1;
+}
+">
